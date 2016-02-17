@@ -1,0 +1,107 @@
+// Mixins to help iterate over the two color arrays
+@mixin standard-fill($color-list)  {
+  @each $color in $color-list {
+    &.#{nth($color, 1)} {
+      fill: nth($color, 2);
+    }
+  }
+}
+@mixin standard-stroke($color-list)  {
+  @each $color in $color-list {
+    &.#{nth($color, 1)} {
+      stroke: nth($color, 2);
+    }
+  }
+}
+@mixin lighter-fill-darker-stroke($color-list)  {
+  @each $color in $color-list {
+    &.#{nth($color, 1)} {
+      stroke: shade(nth($color, 2), 12%);
+      fill: tint(nth($color, 2), 30%);
+    }
+  }
+}
+
+// Score colors
+$score-green:               #96cd00;
+$score-yellow:              #fbcc3c;
+$score-orange:              #ff8800;
+$score-red:                 #f35132;
+$score-dark-green:          #068800;
+$score-blue:                #1b94da;
+$score-gray:                #ededed;
+$score-slate:               #98a3b3;
+$score-infantry-blue:       #abbfd8;
+
+// List of all score colors [CSS class name, color value]
+$score-colors:
+    green $score-green,
+    yellow $score-yellow,
+    orange $score-orange,
+    red $score-red,
+    dark-green $score-dark-green,
+    blue $score-blue,
+    gray $score-gray,
+    slate $score-slate,
+    infantry-blue $score-infantry-blue;
+
+// Chart series colors
+$chart-series-default:                  rgba(0,0,0,0.18); // Only used for single-series line charts and trendlines
+
+$chart-series-darkest-blue:             #2164bd;
+$chart-series-darker-blue:              #5a95d8;
+$chart-series-blue:                     #5ab6d8;
+$chart-series-lighter-blue:             #21bdb0;
+$chart-series-lightest-blue:            #5aced8;
+
+$chart-series-darkest-purple:           #a521bd;
+$chart-series-darker-purple:            #935bfa;
+$chart-series-purple:                   #b67dec;
+$chart-series-lighter-purple:           #e55bfa;
+$chart-series-lightest-purple:          #fe8eed;
+
+$chart-series-darkest-gray:             #424242;
+$chart-series-darker-gray:              #666666;
+$chart-series-gray:                     #999999;
+$chart-series-lighter-gray:             #c4c4c4;
+$chart-series-lightest-gray:            #e0e0e0;
+
+$chart-series-initiative-budget:        #2164bd;
+$chart-series-initiative-schedule:        #8977b2;
+
+$chart-series-colors:
+    darkest-blue $chart-series-darkest-blue,
+    darker-blue $chart-series-darker-blue,
+    blue $chart-series-blue,
+    lighter-blue $chart-series-lighter-blue,
+    lightest-blue $chart-series-lightest-blue,
+    darkest-purple $chart-series-darkest-purple,
+    darker-purple $chart-series-darker-purple,
+    purple $chart-series-purple,
+    lighter-purple $chart-series-lighter-purple,
+    lightest-purple $chart-series-lightest-purple,
+    darkest-gray $chart-series-darkest-gray,
+    darker-gray $chart-series-darker-gray,
+    gray $chart-series-gray,
+    lighter-gray $chart-series-lighter-gray,
+    lightest-gray $chart-series-lightest-gray,
+    initiative-budget $chart-series-initiative-budget,
+    initiative-schedule $chart-series-initiative-schedule;
+
+// Other Chart Colors
+$color-chart-text:                  #4a4a4a;
+$color-chart-background:            #ffffff;
+
+// Tooltip
+$tooltip-header-bg:                 #fafbfc;
+$tooltip-bg:                        #ffffff;
+$tooltip-border:                    rgba(127, 142, 151, 0.45);
+$tooltip-shadow:                    rgba(127, 142, 151, 0.45);
+$tooltip-header-border:             #c8c8c8;
+$tooltip-carrot-shadow:             rgba(0, 0, 0, 0.11);
+$tooltip-carrot-bg:                 #ffffff;
+$tooltip-error-border:              #f69b9b;
+$tooltip-dark-bg:                   #18191b;
+$tooltip-dark-border:               #242629;
+$tooltip-dark-text:                 #e1e8eb;
+$tooltip-breadcrumb:                #818181;
