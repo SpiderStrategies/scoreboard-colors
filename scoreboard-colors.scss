@@ -66,6 +66,23 @@ $chart-series-gray:                     #999999;
 $chart-series-lighter-gray:             #c4c4c4;
 $chart-series-lightest-gray:            #e0e0e0;
 
+// new chart colors for experimentation in #6745
+$chart-series-malibu-light:             #ABEBF5;
+$chart-series-malibu-medium:            #60CBDB;
+$chart-series-malibu-dark:              #00A9C3;
+
+$chart-series-slate-light:              #C4CFFF;
+$chart-series-slate-medium:             #839AFF;
+$chart-series-slate-dark:               #3654D4;
+
+$chart-series-silver-light:             #D7DEE0;
+$chart-series-silver-medium:            #BCC2C4;
+$chart-series-silver-dark:              #8E9699;
+
+$chart-series-violet-light:             #FE8EED;
+$chart-series-violet-medium:            #E55BFA;
+$chart-series-violet-dark:              #B67DEC;
+
 $chart-series-initiative-budget:        #2164bd;
 $chart-series-initiative-schedule:        #8977b2;
 
@@ -85,6 +102,18 @@ $chart-series-colors:
     gray $chart-series-gray,
     lighter-gray $chart-series-lighter-gray,
     lightest-gray $chart-series-lightest-gray,
+    light-malibu $chart-series-malibu-light,
+    medium-malibu $chart-series-malibu-medium,
+    dark-malibu $chart-series-malibu-dark,
+    light-slate $chart-series-slate-light,
+    medium-slate $chart-series-slate-medium,
+    dark-slate $chart-series-slate-dark,
+    light-silver $chart-series-silver-light,
+    medium-silver $chart-series-silver-medium,
+    dark-silver $chart-series-silver-dark,
+    light-violet $chart-series-violet-light,
+    medium-violet $chart-series-violet-medium,
+    dark-violet $chart-series-violet-dark,
     initiative-budget $chart-series-initiative-budget,
     initiative-schedule $chart-series-initiative-schedule;
 
