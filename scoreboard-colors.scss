@@ -66,6 +66,7 @@ $chart-series-dark-violet:              #B67DEC;
 
 $chart-series-initiative-budget:        #2164bd;
 $chart-series-initiative-schedule:      #8977b2;
+$chart-series-lighter-gray:             #f3f5f6;
 
 $chart-series-colors:
     light-malibu $chart-series-light-malibu,
@@ -81,7 +82,9 @@ $chart-series-colors:
     medium-violet $chart-series-medium-violet,
     dark-violet $chart-series-dark-violet,
     initiative-budget $chart-series-initiative-budget,
-    initiative-schedule $chart-series-initiative-schedule;
+    initiative-schedule $chart-series-initiative-schedule,
+    lighter-gray $chart-series-lighter-gray;
+	
 
 // Other Chart Colors
 $color-chart-text:                  #4a4a4a;
