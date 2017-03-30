@@ -89,6 +89,28 @@ $chart-series-colors:
 $color-chart-text:                  #4a4a4a;
 $color-chart-background:            #ffffff;
 
+// Gauge Color override used to set special styling to 'juice up' and balance the gauge colors
+@function overrideColors($list) {
+  $result: ();
+
+  @each $color-name, $color-value in $list {
+    // A couple score colors are differnt from the versions we use everywhere else
+    // in the app. We only use these for the color gradients.
+    // They override
+    @if $color-name == red  {
+      $result: append($result, $color-name #f23410);
+    } @else if $color-name == yellow {
+      $result: append($result, $color-name #ffd553);
+    } @else {
+      $result: append($result, $color-name $color-value);
+    }
+  }
+
+  @return $result;
+}
+
+$gauge-gradient-colors: overrideColors($score-colors);
+
 // Tooltip
 $tooltip-header-bg:                 #fafbfc;
 $tooltip-bg:                        #ffffff;
