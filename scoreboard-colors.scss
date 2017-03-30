@@ -35,15 +35,15 @@ $score-infantry-blue:       #abbfd8;
 
 // List of all score colors [CSS class name, color value]
 $score-colors:
-    green $score-green,
-    yellow $score-yellow,
-    orange $score-orange,
-    red $score-red,
-    dark-green $score-dark-green,
-    blue $score-blue,
-    gray $score-gray,
-    slate $score-slate,
-    infantry-blue $score-infantry-blue;
+  green $score-green,
+  yellow $score-yellow,
+  orange $score-orange,
+  red $score-red,
+  dark-green $score-dark-green,
+  blue $score-blue,
+  gray $score-gray,
+  slate $score-slate,
+  infantry-blue $score-infantry-blue;
 
 // Chart series colors
 $chart-series-default:                  rgba(0,0,0,0.18); // Only used for single-series line charts and trendlines
@@ -69,26 +69,47 @@ $chart-series-initiative-schedule:      #8977b2;
 $chart-series-lighter-gray:             #f3f5f6;
 
 $chart-series-colors:
-    light-malibu $chart-series-light-malibu,
-    medium-malibu $chart-series-medium-malibu,
-    dark-malibu $chart-series-dark-malibu,
-    light-slate-blue $chart-series-light-slate-blue,
-    medium-slate-blue $chart-series-medium-slate-blue,
-    dark-slate-blue $chart-series-dark-slate-blue,
-    light-silver $chart-series-light-silver,
-    medium-silver $chart-series-medium-silver,
-    dark-silver $chart-series-dark-silver,
-    light-violet $chart-series-light-violet,
-    medium-violet $chart-series-medium-violet,
-    dark-violet $chart-series-dark-violet,
-    initiative-budget $chart-series-initiative-budget,
-    initiative-schedule $chart-series-initiative-schedule,
-    lighter-gray $chart-series-lighter-gray;
-	
+  light-malibu $chart-series-light-malibu,
+  medium-malibu $chart-series-medium-malibu,
+  dark-malibu $chart-series-dark-malibu,
+  light-slate-blue $chart-series-light-slate-blue,
+  medium-slate-blue $chart-series-medium-slate-blue,
+  dark-slate-blue $chart-series-dark-slate-blue,
+  light-silver $chart-series-light-silver,
+  medium-silver $chart-series-medium-silver,
+  dark-silver $chart-series-dark-silver,
+  light-violet $chart-series-light-violet,
+  medium-violet $chart-series-medium-violet,
+  dark-violet $chart-series-dark-violet,
+  initiative-budget $chart-series-initiative-budget,
+  initiative-schedule $chart-series-initiative-schedule,
+  lighter-gray $chart-series-lighter-gray;
 
 // Other Chart Colors
 $color-chart-text:                  #4a4a4a;
 $color-chart-background:            #ffffff;
+
+// Gauge Color override used to set special styling to 'juice up' and balance the gauge colors
+@function overrideColors($list) {
+  $result: ();
+
+  @each $color-name, $color-value in $list {
+    // A couple score colors are differnt from the versions we use everywhere else
+    // in the app. We only use these for the color gradients.
+    // They override
+    @if $color-name == red  {
+      $result: append($result, $color-name #f23410);
+    } @else if $color-name == yellow {
+      $result: append($result, $color-name #ffd553);
+    } @else {
+      $result: append($result, $color-name $color-value);
+    }
+  }
+
+  @return $result;
+}
+
+$gauge-gradient-colors: overrideColors($score-colors);
 
 // Tooltip
 $tooltip-header-bg:                 #fafbfc;
