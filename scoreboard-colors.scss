@@ -13,11 +13,12 @@
     }
   }
 }
+
 @mixin lighter-fill-darker-stroke($color-list)  {
   @each $color in $color-list {
     &.#{nth($color, 1)} {
-      stroke: shade(nth($color, 2), 12%);
-      fill: tint(nth($color, 2), 30%);
+      stroke: mix(#000, nth($color, 2), 12%);
+      fill: mix(#fff, nth($color, 2), 30%);
     }
   }
 }
