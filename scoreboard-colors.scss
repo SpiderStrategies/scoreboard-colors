@@ -87,7 +87,7 @@ $chart-series-colors:
   lighter-gray $chart-series-lighter-gray;
 
 // Other Chart Colors
-$color-chart-text:                  #4a4a4a;
+$color-chart-text:                  #474B57;
 $color-chart-background:            #ffffff;
 
 // Gauge Color override used to set special styling to 'juice up' and balance the gauge colors
@@ -115,8 +115,8 @@ $gauge-gradient-colors: overrideColors($score-colors);
 // Tooltip
 $tooltip-header-bg:                 #fafbfc;
 $tooltip-bg:                        #ffffff;
-$tooltip-border:                    rgba(127, 142, 151, 0.45);
-$tooltip-shadow:                    rgba(127, 142, 151, 0.45);
+$tooltip-border:                    #D2DADF;
+$tooltip-shadow:                    rgba(30,33,37,0.20);
 $tooltip-header-border:             #c8c8c8;
 $tooltip-carrot-shadow:             rgba(0, 0, 0, 0.11);
 $tooltip-carrot-bg:                 #ffffff;
