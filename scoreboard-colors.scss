@@ -83,6 +83,7 @@ $chart-series-light-silver:             #D7DEE0;
 
 $chart-series-initiative-budget:        #2164bd;
 $chart-series-initiative-schedule:      #8977b2;
+$chart-series-lighter-gray:             #f3f5f6;
 
 $chart-series-colors:
   dark-mahogany $chart-series-dark-mahogany,
@@ -105,7 +106,10 @@ $chart-series-colors:
   light-violet $chart-series-light-violet,
   dark-silver $chart-series-dark-silver,
   medium-silver $chart-series-medium-silver,
-  light-silver $chart-series-light-silver;
+  light-silver $chart-series-light-silver,
+  initiative-budget $chart-series-initiative-budget,
+  initiative-schedule $chart-series-initiative-schedule,
+  lighter-gray $chart-series-lighter-gray;
 
 // Other Chart Colors
 $color-chart-text:                  #474B57;
