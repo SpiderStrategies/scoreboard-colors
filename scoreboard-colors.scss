@@ -23,6 +23,106 @@
   }
 }
 
+// Generic
+$color-cta: #30B2EE;
+$color-snow: #FAFBFD;
+$color-whisper: #F6F7FB;
+$color-ash: #F1F5F8;
+$color-solitude: #E9ECF1;
+$color-geyser: #D8E1E6;
+$color-charcoal: #8195A5;
+$color-slate: #5B667A;
+$color-dark: #474B57;
+$color-black: #313D45;
+$color-white: #ffffff;
+
+// Scoring
+$score-negative: #F25131;
+$score-negative-highlight: #F7A695;
+$score-negative-highlight-text: #720E0E;
+$score-in-between-orange: #FF8800;
+$score-in-between-orange-highlight: #FFC889;
+$score-in-between-orange-highlight-text: #87530F;
+$score-medium: #FBCC3B;
+$score-medium-highlight: #FBE499;
+$score-medium-highlight-text: #87690F;
+$score-positive: #96CD00;
+$score-positive-highlight: #CAE779;
+$score-positive-highlight-text: #57720E;
+$score-good-green: #068801;
+$score-good-green-highlight: #9DED9A;
+$score-good-green-highlight-text: #0F6E0C;
+$score-good-blue: #1A94DA;
+$score-good-blue-highlight: #CDE9FA;
+$score-good-blue-highlight-text: #0E4972;
+$score-unscored-with-value: #8E9699;
+$score-unscored-with-value-highlight: #D7DEE0;
+$score-unscored-with-value-highlight-text: #444A4D;
+$score-missing-data: #EDEDED;
+$score-missing-data-highlight: #EDEDED;
+$score-missing-data-highlight-text: #575757;
+$score-unable-to-determine: #ABBFD8;
+$score-unable-to-determine-highlight: #DDE4ED;
+$score-unable-to-determine-highlight-text: #444D57;
+
+$scoreboard-colors: (
+	green: $score-positive,
+	yellow: $score-medium,
+	orange: $score-in-between-orange,
+	red: $score-negative,
+	dark-green: $score-good-green,
+	blue: $score-good-blue,
+	gray: $score-unscored-with-value,
+	slate: $score-missing-data,
+	infantry-blue: $score-unable-to-determine,
+	score-highlight: (
+		green: $score-positive-highlight,
+		yellow: $score-medium-highlight,
+		orange: $score-in-between-orange-highlight,
+		red: $score-negative-highlight,
+		dark-green: $score-good-green-highlight,
+		blue: $score-good-blue-highlight,
+		gray: $score-unscored-with-value-highlight,
+		slate: $score-missing-data-highlight,
+		infantry-blue: $score-unable-to-determine-highlight
+	),
+	score-highlight-text: (
+		green: $score-positive-highlight-text,
+		yellow: $score-medium-highlight-text,
+		orange: $score-in-between-orange-highlight-text,
+		red: $score-negative-highlight-text,
+		dark-green: $score-good-green-highlight-text,
+		blue: $score-good-blue-highlight-text,
+		gray: $score-unscored-with-value-highlight-text,
+		slate: $score-missing-data-highlight-text,
+		infantry-blue: $score-unable-to-determine-highlight-text
+	)
+);
+
+// Returns a color or nested color from $scoreboard-colors
+// Ex: background: scoreboardColor(slate)
+// Ex: background: scoreboardColor(score-highlight, slate)
+@function scoreboardColor($category, $color:null) {
+	@if ($color) {
+		@return map-get(map-get($scoreboard-colors, $category), $color);
+	} @else {
+		@return map-get($scoreboard-colors, $color);
+	}
+}
+
+// List of all score colors [CSS class name, color value]
+$score-colors:
+  green $score-positive,
+  yellow $score-medium,
+  orange $score-in-between-orange,
+  red $score-negative,
+  dark-green $score-good-green,
+  blue $score-good-blue,
+  gray $score-unscored-with-value,
+  slate $score-missing-data,
+  infantry-blue $score-unable-to-determine;
+
+
 // Score colors
 $score-green:               #96cd00;
 $score-yellow:              #fbcc3c;
@@ -34,7 +134,6 @@ $score-gray:                #ededed;
 $score-slate:               #98a3b3;
 $score-infantry-blue:       #abbfd8;
 
-// List of all score colors [CSS class name, color value]
 $score-colors:
   green $score-green,
   yellow $score-yellow,
