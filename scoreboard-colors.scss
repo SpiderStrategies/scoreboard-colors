@@ -23,7 +23,7 @@
   }
 }
 
-// Generic
+// SIMPLIFIED COLOR PALATE
 $color-cta: #30B2EE;
 $color-snow: #FAFBFD;
 $color-whisper: #F6F7FB;
@@ -35,6 +35,183 @@ $color-slate: #5B667A;
 $color-dark: #474B57;
 $color-black: #313D45;
 $color-white: #ffffff;
+$color-true-black: #000000;
+
+// BUTTONS
+// -- button-primary
+$color-button-primary-background-stop1: #2BABEB;
+$color-button-primary-background-stop2: #40BCF1;
+$color-button-primary-border: #25A9E6;
+$color-button-primary-box-shadow: #1092D0;
+$color-button-primary-background-stop1-hovered: #45BEFA;
+$color-button-primary-background-stop2-hovered: #54CCFF;
+$color-button-primary-background-stop1-active: $color-button-primary-background-stop2-hovered;
+$color-button-primary-background-stop2-active: $color-button-primary-background-stop1-hovered;
+$color-button-primary-box-shadow-active: rgba(16,146,208,0.70);
+$color-button-primary-background-disabled: rgba($color-cta, .45);
+$color-button-primary-text: $color-white;
+$color-button-primary-text-shadow: #056290;
+// -- button-secondary
+$color-button-secondary-background-stop1: #FCFEFF;
+$color-button-secondary-background-stop2: $color-white;
+$color-button-secondary-border: #D1D9DE;
+$color-button-secondary-box-shadow: #F7F9FA;
+$color-button-secondary-background-stop1-hovered: #F0F4F7;
+$color-button-secondary-background-stop2-hovered: #F5F8FA;
+$color-button-secondary-background-stop1-active: $color-button-secondary-background-stop1;
+$color-button-secondary-background-stop2-active: $color-button-secondary-background-stop2;
+$color-button-secondary-background-disabled: rgba($color-white, .45);
+$color-button-secondary-text: $color-slate;
+// -- button-tertiary
+$color-button-tertiary-background-stop1: #E74141;
+$color-button-tertiary-background-stop2: #F64E4E;
+$color-button-tertiary-border: #D33434;
+$color-button-tertiary-box-shadow: #B90D0D;
+$color-button-tertiary-background-stop1-hovered: #F95A5A;
+$color-button-tertiary-background-stop2-hovered: #FF6A6A;
+$color-button-tertiary-box-shadow-hovered: rgba(16,146,208,0.70);
+$color-button-tertiary-background-stop1-active: $color-button-tertiary-background-stop2-hovered;
+$color-button-tertiary-background-stop2-active: $color-button-tertiary-background-stop1-hovered;
+$color-button-tertiary-box-shadow-active: rgba(185,13,13,0.70);
+$color-button-tertiary-background-disabled: rgba(#EF4848, .45);
+$color-button-tertiary-text: #FFFCFC;
+$color-button-tertiary-text-shadow: #930707;
+
+// TEXT LINKS
+// -- text-link-primary
+$color-text-link-primary-text: #34B2EE;
+$color-text-link-primary-background-hover: rgba($color-text-link-primary-text, .1);
+// -- text-link-tertiary
+$color-text-link-tertiary-text: #EF4848;
+$color-text-link-tertiary-background-hover: rgba($color-text-link-tertiary-text, .1);
+
+
+// INPUTS
+// -- standard input
+$color-input-background: $color-white;
+$color-input-border: $color-geyser;
+$color-input-box-shadow: #D2D8DD;
+$color-input-placeholder-text: #B2BBC1;
+$color-input-filled-background: $color-input-background;
+$color-input-filled-border: #D2DADF;
+$color-input-filled-box-shadow: $color-input-box-shadow;
+$color-input-filled-text: $color-black;
+$color-input-hovered-background: $color-input-background;
+$color-input-hovered-border: #B8C2C8;
+$color-input-hovered-box-shadow: #B2BBC1;
+$color-input-hovered-text: $color-black;
+$color-input-focused-background: $color-input-background;
+$color-input-focused-border: $color-cta;
+$color-input-focused-box-shadow-outset: rgba(47,177,237,0.20);
+$color-input-focused-box-shadow-inset: $color-input-box-shadow;
+$color-input-focused-text: $color-black;
+$color-input-errored-background: $color-input-background;
+$color-input-errored-border: #FF4D4B;
+$color-input-errored-box-shadow: $color-input-box-shadow;
+$color-input-errored-text: #EF4848;
+$color-input-errored-button-box-background: $color-input-errored-border;
+$color-input-errored-button-box-border: #CD1A1A;
+$color-input-errored-button-box-text: $color-white;
+$color-input-disabled-background: $color-input-background;
+$color-input-disabled-border: $color-input-filled-border;
+$color-input-disabled-box-shadow: $color-input-box-shadow;
+$color-input-disabled-text: #989EA2;
+// -- input-metric
+$color-input-metric-background: $color-input-background;
+$color-input-metric-border: $color-input-filled-border;
+$color-input-metric-box-shadow: $color-input-box-shadow;
+$color-input-metric-button-box-background: rgba(210,218,223,0.30);
+$color-input-metric-button-box-border: $color-input-filled-border;
+$color-input-metric-button-box-text: $color-slate;
+$color-input-metric-placeholder-text: $color-input-placeholder-text;
+$color-input-metric-filled-background: $color-input-metric-background;
+$color-input-metric-filled-border: $color-input-filled-border;
+$color-input-metric-filled-box-shadow: $color-input-box-shadow;
+$color-input-metric-filled-text: $color-input-filled-text;
+$color-input-metric-filled-button-box-background: $color-input-metric-button-box-background;
+$color-input-metric-filled-button-box-border: $color-input-metric-filled-border;
+$color-input-metric-filled-button-box-text: $color-input-metric-button-box-text;
+$color-input-metric-hovered-background: $color-input-background;
+$color-input-metric-hovered-border: $color-input-hovered-border;
+$color-input-metric-hovered-box-shadow: $color-input-box-shadow;
+$color-input-metric-hovered-text: #818B8F;
+$color-input-metric-hovered-button-box-background: $color-input-metric-button-box-background;
+$color-input-metric-hovered-button-box-border: #B9C2C9;
+$color-input-metric-hovered-button-box-text: $color-input-metric-button-box-text;
+$color-input-metric-focused-background: $color-input-background;
+$color-input-metric-focused-border: $color-input-focused-border;
+$color-input-metric-focused-box-shadow-outset: $color-input-focused-box-shadow-outset;
+$color-input-metric-focused-box-shadow-inset: $color-input-focused-box-shadow-inset;
+$color-input-metric-focused-text: #818B8F;
+$color-input-metric-focused-button-box-background: $color-input-metric-button-box-background;
+$color-input-metric-focused-button-box-border: #B9C2C9;
+$color-input-metric-focused-button-box-shadow: rgba(0,0,0,0.10);
+$color-input-metric-focused-button-box-text: $color-input-metric-button-box-text;
+$color-input-metric-errored-background-stop1: $color-input-background;
+$color-input-metric-errored-background-stop2: #FCFEFF;
+$color-input-metric-errored-border: #FF4C4C;
+$color-input-metric-errored-shadow: rgba(83,83,83,0.18);
+$color-input-metric-errored-text: $color-input-errored-text;
+$color-input-metric-errored-button-box-background: #FF4D4B;
+$color-input-metric-errored-button-box-border: $color-input-errored-button-box-border;
+$color-input-metric-errored-button-box-text: $color-input-errored-button-box-text;
+$color-input-metric-disabled-background: $color-input-background;
+$color-input-metric-disabled-border: #D2DADF;
+$color-input-metric-disabled-shadow: $color-input-box-shadow;
+$color-input-metric-disabled-text: $color-solitude;
+$color-input-metric-disabled-button-box-background: $color-input-metric-background;
+$color-input-metric-disabled-button-box-border: $color-input-metric-disabled-border;
+$color-input-metric-disabled-button-box-shadow: $color-input-box-shadow;
+$color-input-metric-disabled-button-box-text: #D8E1E6;
+// -- input-search
+$color-input-search-background: $color-input-background;
+$color-input-search-border: #D2DADF;
+$color-input-search-shadow: $color-input-box-shadow;
+$color-input-search-placeholder-text: $color-input-placeholder-text;
+$color-input-search-active-background: $color-input-search-background;
+$color-input-search-active-border: #87BBD3;
+$color-input-search-active-outset-shadow: rgba(47,177,237,0.20);
+$color-input-search-active-inset-shadow: $color-input-box-shadow;
+$color-input-search-active-text: $color-select-text;
+$color-input-search-disabled-background: $color-input-search-background;
+$color-input-search-disabled-border: rgba($color-input-search-border, .5);
+$color-input-search-disabled-shadow: #D2D8DD;
+$color-input-search-disabled-text: #B2BBC1;
+$color-input-search-dark-background: #161618
+$color-input-search-dark-border: #282A2C;
+$color-input-search-dark-text: #818B8F;
+$color-input-search-dark-filled-background: #0F0F11;
+$color-input-search-dark-filled-border: $color-input-search-dark-border;
+$color-input-search-dark-filled-text: $color-input-search-dark-text;
+$color-input-search-dark-hovered-background: $color-true-black;
+$color-input-search-dark-hovered-border: $color-input-search-dark-border;
+$color-input-search-dark-hovered-text: $color-white;
+$color-input-search-dark-disabled-background: #18191B;
+$color-input-search-dark-disabled-text: $color-input-search-dark-text;
+
+
+// SELECTS
+// -- standard select
+$color-select-background-stop1: $color-white;
+$color-select-background-stop2: #FCFEFF;
+$color-select-border: #D1D9DE;
+$color-select-outset-shadow: rgba(242,245,247,0.80);
+$color-select-inset-shadow: rgba(247,249,250,0.50);
+$color-select-text: $color-dark;
+$color-select-triangle: #626979;
+$color-select-hover-background-stop1: $color-select-background-stop1;
+$color-select-hover-background-stop2: $color-select-background-stop2;
+$color-select-hover-border: #B8C2C8;
+$color-select-hover-shadow: $color-select-outset-shadow;
+$color-select-hover-text: $color-select-text;
+$color-select-hover-triangle: $color-select-triangle;
+$color-select-disabled-background: $color-select-background-stop1;
+$color-select-disabled-border: #D2DADF;
+$color-select-disabled-shadow: #D2D8DD;
+$color-select-disabled-text: $color-black;
+$color-select-disabled-triangle: $color-select-triangle;
+
+
 
 // Scoring
 $score-negative: #F25131;
@@ -66,15 +243,17 @@ $score-unable-to-determine-highlight: #DDE4ED;
 $score-unable-to-determine-highlight-text: #444D57;
 
 $scoreboard-colors: (
-	green: $score-positive,
-	yellow: $score-medium,
-	orange: $score-in-between-orange,
-	red: $score-negative,
-	dark-green: $score-good-green,
-	blue: $score-good-blue,
-	gray: $score-unscored-with-value,
-	slate: $score-missing-data,
-	infantry-blue: $score-unable-to-determine,
+	score: (
+		green: $score-positive,
+		yellow: $score-medium,
+		orange: $score-in-between-orange,
+		red: $score-negative,
+		dark-green: $score-good-green,
+		blue: $score-good-blue,
+		gray: $score-unscored-with-value,
+		slate: $score-missing-data,
+		infantry-blue: $score-unable-to-determine,
+	),
 	score-highlight: (
 		green: $score-positive-highlight,
 		yellow: $score-medium-highlight,
