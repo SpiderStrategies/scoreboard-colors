@@ -49,67 +49,81 @@ $score-colors:
 // Chart series colors
 $chart-series-default:                  rgba(0,0,0,0.18); // Only used for single-series line charts and trendlines
 
-$chart-series-dark-mahogany:            #CA2121;
-$chart-series-medium-mahogany:          #EF4848;
-$chart-series-light-mahogany:           #F7A695;
+$chart-series-red-dark:                 #C93C20;
+$chart-series-red-medium:               #F25131;
+$chart-series-red-light:                #F7A695;
 
-$chart-series-dark-clementine:          #EB6600;
-$chart-series-medium-clementine:        #FF8800;
-$chart-series-light-clementine:         #FFC889;
+$chart-series-orange-dark:              #EB6600;
+$chart-series-orange-medium:            #FF8800;
+$chart-series-orange-light:             #FFC889;
 
-$chart-series-dark-tangerine:           #F1A000;
-$chart-series-medium-tangerine:         #FBCC3B;
-$chart-series-light-tangerine:          #FBE499;
+$chart-series-yellow-dark:              #F1A000;
+$chart-series-yellow-medium:            #FBCC3B;
+$chart-series-yellow-light:             #FBE499;
 
-$chart-series-dark-limeade:             #6EAD00;
-$chart-series-medium-limeade:           #96CD00;
-$chart-series-light-limeade:            #CAE779;
+$chart-series-green-dark:               #6EAD00;
+$chart-series-green-medium:             #96CD00;
+$chart-series-green-light:              #CAE779;
 
-$chart-series-dark-malibu:              #00A9C3;
-$chart-series-medium-malibu:            #60CBDB;
-$chart-series-light-malibu:             #CCF3f9;
+$chart-series-turquoise-dark:           #00A9C3;
+$chart-series-turquoise-medium:         #60CBDB;
+$chart-series-turquoise-light:          #CCF3f9;
 
-$chart-series-dark-slate-blue:          #3654D4;
-$chart-series-medium-slate-blue:        #839AFF;
-$chart-series-light-slate-blue:         #C4CFFF;
+$chart-series-aqua-dark:                #1988C8;
+$chart-series-aqua-medium:                 #1A94DA;
+$chart-series-aqua-light:               #CDE9FA;
 
-$chart-series-dark-violet:              #B67DEC;
-$chart-series-medium-violet:            #E55BFA;
-$chart-series-light-violet:             #E09CFF;
+$chart-series-blue-dark:                #3654D4;
+$chart-series-blue-medium:              #839AFF;
+$chart-series-blue-light:               #C4CFFF;
 
-$chart-series-dark-silver:              #8E9699;
-$chart-series-medium-silver:            #BCC2C4;
-$chart-series-light-silver:             #D7DEE0;
+$chart-series-purple-dark:              #6D1DB8;
+$chart-series-purple-medium:               #AD5AFA;
+$chart-series-purple-light:             #DBB5FF;
+
+$chart-series-fuschia-dark:             #A31DB8;
+$chart-series-fuschia-medium:           #E55BFA;
+$chart-series-fuschia-light:            #F5B5FF;
+
+$chart-series-gray-dark:                #8E9699;
+$chart-series-gray-medium:              #BCC2C4;
+$chart-series-gray-light:               #D7DEE0;
 
 $chart-series-initiative-budget:        #2164bd;
 $chart-series-initiative-schedule:      #8977b2;
 $chart-series-lighter-gray:             #f3f5f6;
 
 $chart-series-colors:
-  dark-mahogany $chart-series-dark-mahogany,
-  medium-mahogany $chart-series-medium-mahogany,
-  light-mahogany $chart-series-light-mahogany,
-  dark-clementine $chart-series-dark-clementine,
-  medium-clementine $chart-series-medium-clementine,
-  light-clementine $chart-series-light-clementine,
-  dark-tangerine $chart-series-dark-tangerine,
-  medium-tangerine $chart-series-medium-tangerine,
-  light-tangerine $chart-series-light-tangerine,
-  dark-limeade $chart-series-dark-limeade,
-  medium-limeade $chart-series-medium-limeade,
-  light-limeade $chart-series-light-limeade,
-  dark-malibu $chart-series-dark-malibu,
-  medium-malibu $chart-series-medium-malibu,
-  light-malibu $chart-series-light-malibu,
-  dark-slate-blue $chart-series-dark-slate-blue,
-  medium-slate-blue $chart-series-medium-slate-blue,
-  light-slate-blue $chart-series-light-slate-blue,
-  dark-violet $chart-series-dark-violet,
-  medium-violet $chart-series-medium-violet,
-  light-violet $chart-series-light-violet,
-  dark-silver $chart-series-dark-silver,
-  medium-silver $chart-series-medium-silver,
-  light-silver $chart-series-light-silver,
+  red-dark $chart-series-red-dark,
+  red-medium $chart-series-red-medium,
+  red-light $chart-series-red-light,
+  orange-dark $chart-series-orange-dark,
+  orange-medium $chart-series-orange-medium,
+  orange-light $chart-series-orange-light,
+  yellow-dark $chart-series-yellow-dark,
+  yellow-medium $chart-series-yellow-medium,
+  yellow-light $chart-series-yellow-light,
+  green-dark $chart-series-green-dark,
+  green-medium $chart-series-green-medium,
+  green-light $chart-series-green-light,
+  turquoise-dark $chart-series-turquoise-dark,
+  turquoise-medium $chart-series-turquoise-medium,
+  turquoise-light $chart-series-turquoise-light,
+  aqua-dark $chart-series-aqua-dark,
+  aqua-medium $chart-series-aqua-medium,
+  aqua-light $chart-series-aqua-light,
+  blue-dark $chart-series-blue-dark,
+  blue-medium $chart-series-blue-medium,
+  blue-light $chart-series-blue-light,
+  purple-dark $chart-series-purple-dark,
+  purple-medium $chart-series-purple-medium,
+  purple-light $chart-series-purple-light,
+  fuschia-dark $chart-series-fuschia-dark,
+  fuschia-medium $chart-series-fuschia-medium,
+  fuschia-light $chart-series-fuschia-light,
+  gray-dark $chart-series-gray-dark,
+  gray-medium $chart-series-gray-medium,
+  gray-light $chart-series-gray-light,
   initiative-budget $chart-series-initiative-budget,
   initiative-schedule $chart-series-initiative-schedule,
   lighter-gray $chart-series-lighter-gray;
