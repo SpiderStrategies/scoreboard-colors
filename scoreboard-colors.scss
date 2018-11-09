@@ -87,6 +87,16 @@ $color-button-toolbar-button-border: #D2D9DF;
 $color-button-toolbar-button-icon-fill: #98AAB6;
 $color-button-toolbar-button-active-icon-fill: $color-cta;
 
+// LABELED TOGGLE
+$color-labeled-toggle-button-background: $color-white;
+$color-labeled-toggle-button-border: $color-button-default-border;
+$color-labeled-toggle-button-text: $color-slate;
+$color-labeled-toggle-button-selected-text: $color-cta;
+$color-labeled-toggle-button-selected-shaddow: rgba(0,0,0,0.11);
+$color-labeled-toggle-button-hovered-border: #9FADB7;
+$color-labeled-toggle-button-hovered-background-stop1: #FBFDFE;
+$color-labeled-toggle-button-hovered-background-stop2: $color-labeled-toggle-button-background;
+
 // TEXT LINKS
 // -- text-link-primary
 $color-text-link-primary-text: #34B2EE;
@@ -295,13 +305,14 @@ $color-toggle-knob-hovered-background: $color-toggle-knob-background;
 $color-toggle-knob-hovered-border: $color-toggle-knob-border;
 $color-toggle-switch-checked-background: #2FB2ED;
 $color-toggle-switch-checked-border: #2E99CB;
-$color-toggle-knob-selected-background: $color-toggle-knob-background;
-$color-toggle-knob-selected-border: rgba(0,0,0,0.32);
+$color-toggle-knob-checked-background: $color-toggle-knob-background;
+$color-toggle-knob-checked-border: rgba(0,0,0,0.32);
+$color-toggle-knob-checked-shadow: rgba(0,0,0,0.32);
 $color-toggle-switch-checked-indicator: $color-button-primary-text;
 $color-toggle-switch-checked-indicator-shadow: $color-button-primary-text-shadow;
 $color-toggle-switch-disabled-background: rgba($color-toggle-switch-background, .8);
 $color-toggle-switch-disabled-border: rgba($color-toggle-switch-border, .8);
-$color-toggle-knob-disabled-background: rgba($color-toggle-knob-background, .8);
+$color-toggle-knob-disabled-background: $color-toggle-knob-background;
 $color-toggle-knob-disabled-border: rgba($color-toggle-knob-border, .8);
 $color-toggle-switch-checked-disabled-background: rgba($color-toggle-switch-checked-background, .5);
 $color-toggle-switch-checked-disabled-border: rgba($color-toggle-switch-checked-border, .5);
@@ -349,7 +360,7 @@ $color-checkbox-dark-disabled-background: rgba($color-checkbox-dark-background, 
 $color-checkbox-dark-disabled-border: rgba($color-checkbox-dark-border, .5);
 $color-checkbox-dark-selected-disabled-background: rgba($color-checkbox-dark-selected-background, .5);
 $color-checkbox-dark-selected-disabled-border: rgba($color-checkbox-dark-selected-border, .5);
-$color-checkbox-dark-selected-disabled-check: rgba($color-checkbox-dark-selected-check, .5);
+$color-checkbox-dark-selected-disabled-check: $color-checkbox-dark-selected-check;
 
 // BADGES
 $color-badge-background-stop1: #F0F4F7;
