@@ -86,6 +86,15 @@ $color-button-toolbar-button-background: $color-white;
 $color-button-toolbar-button-border: #D2D9DF;
 $color-button-toolbar-button-icon-fill: #98AAB6;
 $color-button-toolbar-button-active-icon-fill: $color-cta;
+// -- button-covert
+$color-button-covert-background: $color-white;
+$color-button-covert-border: #D1D8DE;
+$color-button-covert-text: $color-charcoal;
+$color-button-covert-hovered-shadow: rgba(0,0,0,0.05);
+$color-button-covert-active-background-stop1: #FBFBFB;
+$color-button-covert-active-background-stop2: #FAF8FB;
+$color-button-covert-active-border: #D0D9DE;
+$color-button-covert-active-shadow: $color-button-covert-hovered-shadow;
 
 // LABELED TOGGLE
 $color-labeled-toggle-button-background: $color-white;
@@ -104,7 +113,11 @@ $color-text-link-primary-hovered-background: rgba($color-text-link-primary-text,
 // -- text-link-danger
 $color-text-link-danger-text: #EF4848;
 $color-text-link-danger-hovered-background: rgba($color-text-link-danger-text, .1);
-
+// -- text-link-emphasized
+$color-text-link-emphasized-text: #313d45;
+$color-text-link-emphasized-hovered-background: #E8EBF2;
+$color-text-link-emphasized-highlighted-background: #8195A5;
+$color-text-link-emphasized-highlighted-color: #30B2EE;
 
 // INPUTS
 // -- standard input
@@ -405,6 +418,24 @@ $color-calendar-picker-selected-text: $color-white;
 $color-calendar-picker-selected-border: #6EC9F3;
 $color-calendar-picker-selected-beginning-end-background: $color-cta;
 $color-calendar-picker-selected-beginning-end-border: rgba(49,61,69,0.20);
+
+// SLIDERS
+$color-slider-thumb-background: #2ab4f2;
+$color-slider-thumb-border: #05a4ec;
+$color-slider-range-markers: #5b6779;
+$color-slider-over-bar: rgba($color-slider-thumb-background, .9);
+$color-slider-under-bar: #eef2f6;
+$color-slider-disabled-thumb-background: #d6e0ea;
+$color-slider-disabled-thumb-text: #8195a5;
+$color-slider-disabled-thumb-border: #b9cbdc;
+$color-slider-disabled-over-bar-disabled: #d6e0ea;
+// -- slider-danger
+$color-slider-danger-over-bar-background: #e74141;
+$color-slider-danger-thumb-background: rgba($color-slider-danger-over-bar-background, .9);
+$color-slider-danger-thumb-border: #d33434;
+// -- slider-warning
+$color-slider-warning-over-bar-background: rgba(#fbcc3c, .9);
+$color-slider-warning-thumb-background: #fbcc3c;
 
 // Scoring
 $score-negative: #F25131;
