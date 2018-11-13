@@ -23,6 +23,180 @@
   }
 }
 
+// SIMPLIFIED COLOR PALATE
+$color-cta: #30B2EE;
+$color-snow: #FAFBFD;
+$color-whisper: #F6F7FB;
+$color-ash: #F1F5F8;
+$color-solitude: #E9ECF1;
+$color-geyser: #D8E1E6;
+$color-charcoal: #8195A5;
+$color-slate: #5B667A;
+$color-dark: #474B57;
+$color-black: #313D45;
+$color-white: #FFFFFF;
+$color-true-black: #000000;
+
+// INPUTS
+// -- standard input
+$color-input-background: $color-white;
+$color-input-border: $color-geyser;
+$color-input-shadow: #D2D8DD;
+$color-input-text: $color-black;
+$color-input-placeholder-text: #B2BBC1;
+$color-input-filled-background: $color-input-background;
+$color-input-filled-border: #D2DADF;
+$color-input-filled-shadow: $color-input-shadow;
+$color-input-hovered-background: $color-input-background;
+$color-input-hovered-border: #B8C2C8;
+$color-input-hovered-shadow: #B2BBC1;
+$color-input-hovered-text: $color-black;
+$color-input-focused-background: $color-input-background;
+$color-input-focused-border: $color-cta;
+$color-input-focused-shadow-outset: rgba(47,177,237,0.20);
+$color-input-focused-shadow-inset: $color-input-shadow;
+$color-input-focused-text: $color-black;
+$color-input-errored-background: $color-input-background;
+$color-input-errored-border: #FF4D4B;
+$color-input-errored-shadow: $color-input-shadow;
+$color-input-errored-text: #EF4848;
+$color-input-errored-button-box-background: #FF4D4B;
+$color-input-errored-button-box-border: #CD1A1A;
+$color-input-errored-button-box-text: $color-white;
+$color-input-disabled-background: $color-input-background;
+$color-input-disabled-border: $color-input-filled-border;
+$color-input-disabled-shadow: $color-input-shadow;
+$color-input-disabled-text: #989EA2;
+
+// SELECTS
+// -- standard select
+$color-select-background-stop1: $color-white;
+$color-select-background-stop2: #FCFEFF;
+$color-select-border: #D1D9DE;
+$color-select-outset-shadow: rgba(242,245,247,0.80);
+$color-select-inset-shadow: rgba(247,249,250,0.50);
+$color-select-text: $color-dark;
+$color-select-triangle: #5B667A;
+$color-select-hovered-background-stop1: $color-select-background-stop1;
+$color-select-hovered-background-stop2: $color-select-background-stop2;
+$color-select-hovered-border: #B8C2C8;
+$color-select-hovered-shadow: $color-select-outset-shadow;
+$color-select-hovered-text: $color-select-text;
+$color-select-hovered-triangle: $color-select-triangle;
+$color-select-focused-background: $color-select-background-stop1;
+$color-select-focused-border: #87BBD3;
+$color-select-focused-outset-shadow: $color-input-focused-shadow-outset;
+$color-select-focused-inset-shadow: $color-input-shadow;
+$color-select-focused-text: $color-select-text;
+$color-select-errored-background-stop1: $color-select-background-stop1;
+$color-select-errored-background-stop2: $color-select-background-stop2;
+$color-select-errored-border: #FF4C4C;
+$color-select-errored-shadow: rgba(83,83,83,0.18);
+$color-select-errored-text: $color-input-errored-text;
+$color-select-button-box-errored-background: $color-input-errored-button-box-background;
+$color-select-button-box-errored-border: $color-input-errored-button-box-border;
+$color-select-button-box-errored-text: $color-input-errored-button-box-text;
+$color-select-disabled-background: $color-select-background-stop1;
+$color-select-disabled-border: #D2DADF;
+$color-select-disabled-shadow: #D2D8DD;
+$color-select-disabled-text: $color-black;
+$color-select-disabled-triangle: $color-select-triangle;
+
+// BADGES
+$color-badge-background-stop1: #F0F4F7;
+$color-badge-background-stop2: #F5F8FA;
+$color-badge-border: #D1D9DE;
+$color-badge-shadow: rgba(247,249,250,0.50);
+$color-badge-text: #818B8F;
+$color-badge-remove-button-background: $color-white;
+$color-badge-remove-button-border: #D2DADF;
+$color-badge-remove-button-text: $color-slate;
+$color-badge-selected-background-stop1: #F0F5F9;
+$color-badge-selected-background-stop2: #D9E6EC;
+$color-badge-selected-border: #7BA1BB;
+$color-badge-selected-shadow: $color-badge-shadow;
+$color-badge-disabled-background-stop1: rgba($color-badge-background-stop1, .5);
+$color-badge-disabled-background-stop2: rgba($color-badge-background-stop2, .5);
+$color-badge-disabled-border: rgba($color-badge-border, .5);
+$color-badge-disabled-shadow: rgba($color-badge-shadow, .5);
+$color-badge-disabled-text: rgba($color-badge-text, .5);
+
+// Scoring
+$score-red: #F25131;
+$score-red-highlight: #F7A695;
+$score-red-highlight-text: #720E0E;
+$score-orange: #FF8800;
+$score-orange-highlight: #FFC889;
+$score-orange-highlight-text: #87530F;
+$score-yellow: #FBCC3B;
+$score-yellow-highlight: #FBE499;
+$score-yellow-highlight-text: #87690F;
+$score-green: #96CD00;
+$score-green-highlight: #CAE779;
+$score-green-highlight-text: #57720E;
+$score-dark-green: #068801;
+$score-dark-green-highlight: #9DED9A;
+$score-dark-green-highlight-text: #0F6E0C;
+$score-blue: #1A94DA;
+$score-blue-highlight: #CDE9FA;
+$score-blue-highlight-text: #0E4972;
+$score-gray: #8E9699;
+$score-gray-highlight: #D7DEE0;
+$score-gray-highlight-text: #444A4D;
+$score-slate: #EDEDED;
+$score-slate-highlight: #EDEDED;
+$score-slate-highlight-text: #575757;
+$score-infantry-blue: #ABBFD8;
+$score-infantry-blue-highlight: #DDE4ED;
+$score-infantry-blue-highlight-text: #444D57;
+
+$scoreboard-colors: (
+	score: (
+		green: $score-green,
+		yellow: $score-yellow,
+		orange: $score-orange,
+		red: $score-red,
+		dark-green: $score-green,
+		blue: $score-blue,
+		gray: $score-gray,
+		slate: $score-slate,
+		infantry-blue: $score-infantry-blue,
+	),
+	score-highlight: (
+		green: $score-green-highlight,
+		yellow: $score-yellow-highlight,
+		orange: $score-orange-highlight,
+		red: $score-red-highlight,
+		dark-green: $score-dark-green-highlight,
+		blue: $score-blue-highlight,
+		gray: $score-gray-highlight,
+		slate: $score-slate-highlight,
+		infantry-blue: $score-infantry-blue-highlight
+	),
+	score-highlight-text: (
+		green: $score-green-highlight-text,
+		yellow: $score-yellow-highlight-text,
+		orange: $score-orange-highlight-text,
+		red: $score-red-highlight-text,
+		dark-green: $score-dark-green-highlight-text,
+		blue: $score-blue-highlight-text,
+		gray: $score-gray-highlight-text,
+		slate: $score-slate-highlight-text,
+		infantry-blue: $score-infantry-blue-highlight-text
+	)
+);
+
+// Returns a color or nested color from $scoreboard-colors
+// Ex: background: scoreboardColor(slate)
+// Ex: background: scoreboardColor(slate, score-highlight)
+@function scoreboardColor($color, $category:null) {
+	@if ($category) {
+		@return map-get(map-get($scoreboard-colors, $category), $color);
+	} @else {
+		@return map-get($scoreboard-colors, $color);
+	}
+}
+
 // Score colors
 $score-green:               #96cd00;
 $score-yellow:              #fbcc3c;
@@ -34,7 +208,6 @@ $score-gray:                #ededed;
 $score-slate:               #98a3b3;
 $score-infantry-blue:       #abbfd8;
 
-// List of all score colors [CSS class name, color value]
 $score-colors:
   green $score-green,
   yellow $score-yellow,
