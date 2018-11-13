@@ -188,9 +188,9 @@ $scoreboard-colors: (
 
 // Returns a color or nested color from $scoreboard-colors
 // Ex: background: scoreboardColor(slate)
-// Ex: background: scoreboardColor(score-highlight, slate)
-@function scoreboardColor($category, $color:null) {
-	@if ($color) {
+// Ex: background: scoreboardColor(slate, score-highlight)
+@function scoreboardColor($color, $category:null) {
+	@if ($category) {
 		@return map-get(map-get($scoreboard-colors, $category), $color);
 	} @else {
 		@return map-get($scoreboard-colors, $color);
