@@ -37,88 +37,6 @@ $color-black: #313D45;
 $color-white: #FFFFFF;
 $color-true-black: #000000;
 
-// BUTTONS
-// -- button-primary
-$color-button-primary-background-stop1: #2BABEB;
-$color-button-primary-background-stop2: #40BCF1;
-$color-button-primary-border: #25A9E6;
-$color-button-primary-shadow: rgba(#1092D0, .2);
-$color-button-primary-text: $color-white;
-$color-button-primary-text-shadow: #056290;
-$color-button-primary-hovered-background-stop1: #45BEFA;
-$color-button-primary-hovered-background-stop2: #54CCFF;
-$color-button-primary-hovered-shadow: $color-button-primary-shadow;
-$color-button-primary-active-background-stop1: $color-button-primary-background-stop2;
-$color-button-primary-active-background-stop2: $color-button-primary-background-stop1;
-$color-button-primary-active-shadow: rgba(16,146,208,.4);
-$color-button-primary-disabled-background: rgba($color-cta, .45);
-$color-button-primary-disabled-text: rgba($color-button-primary-text, .55);
-// -- button-default
-$color-button-default-background-stop1: #FCFEFF;
-$color-button-default-background-stop2: $color-white;
-$color-button-default-border: #D1D9DE;
-$color-button-default-shadow: #F7F9FA;
-$color-button-default-text: $color-slate;
-$color-button-default-hovered-background-stop1: #F0F4F7;
-$color-button-default-hovered-background-stop2: #F5F8FA;
-$color-button-default-active-background-stop1: $color-button-default-background-stop1;
-$color-button-default-active-background-stop2: $color-button-default-background-stop2;
-$color-button-default-disabled-background: rgba($color-white, .45);
-$color-button-default-disabled-text: rgba($color-button-default-text, .45);
-$color-button-default-disabled-border: rgba($color-button-default-border, .45);
-// -- button-danger
-$color-button-danger-background-stop1: #E74141;
-$color-button-danger-background-stop2: #F64E4E;
-$color-button-danger-border: #D33434;
-$color-button-danger-shadow: rgba(#B90D0D, .2);
-$color-button-danger-text: #FFFCFC;
-$color-button-danger-text-shadow: #930707;
-$color-button-danger-hovered-background-stop1: #F95A5A;
-$color-button-danger-hovered-background-stop2: #FF6A6A;
-$color-button-danger-hovered-shadow: rgba(16,146,208,0.30);
-$color-button-danger-active-background-stop1: $color-button-danger-hovered-background-stop2;
-$color-button-danger-active-background-stop2: $color-button-danger-hovered-background-stop1;
-$color-button-danger-active-shadow: rgba(185,13,13,0.70);
-$color-button-danger-disabled-background: rgba(#EF4848, .45);
-$color-button-danger-disabled-text: rgba($color-button-danger-text, .45);
-// -- button-toolbar buttons
-$color-button-toolbar-button-background: $color-white;
-$color-button-toolbar-button-border: #D2D9DF;
-$color-button-toolbar-button-icon-fill: #98AAB6;
-$color-button-toolbar-button-active-icon-fill: $color-cta;
-// -- button-covert
-$color-button-covert-background: $color-white;
-$color-button-covert-border: #D1D8DE;
-$color-button-covert-text: $color-charcoal;
-$color-button-covert-hovered-shadow: rgba(0,0,0,0.05);
-$color-button-covert-active-background-stop1: #FBFBFB;
-$color-button-covert-active-background-stop2: #FAF8FB;
-$color-button-covert-active-border: #D0D9DE;
-$color-button-covert-active-shadow: $color-button-covert-hovered-shadow;
-
-// LABELED TOGGLE
-$color-labeled-toggle-button-background: $color-white;
-$color-labeled-toggle-button-border: $color-button-default-border;
-$color-labeled-toggle-button-text: $color-slate;
-$color-labeled-toggle-button-selected-text: $color-cta;
-$color-labeled-toggle-button-selected-shaddow: rgba(0,0,0,0.11);
-$color-labeled-toggle-button-hovered-border: #9FADB7;
-$color-labeled-toggle-button-hovered-background-stop1: #FBFDFE;
-$color-labeled-toggle-button-hovered-background-stop2: $color-labeled-toggle-button-background;
-
-// TEXT LINKS
-// -- text-link-primary
-$color-text-link-primary-text: #34B2EE;
-$color-text-link-primary-hovered-background: rgba($color-text-link-primary-text, .1);
-// -- text-link-danger
-$color-text-link-danger-text: #EF4848;
-$color-text-link-danger-hovered-background: rgba($color-text-link-danger-text, .1);
-// -- text-link-emphasized
-$color-text-link-emphasized-text: #313d45;
-$color-text-link-emphasized-hovered-background: #E8EBF2;
-$color-text-link-emphasized-highlighted-background: #8195A5;
-$color-text-link-emphasized-highlighted-color: #30B2EE;
-
 // INPUTS
 // -- standard input
 $color-input-background: $color-white;
@@ -149,129 +67,6 @@ $color-input-disabled-background: $color-input-background;
 $color-input-disabled-border: $color-input-filled-border;
 $color-input-disabled-shadow: $color-input-shadow;
 $color-input-disabled-text: #989EA2;
-// -- input-metric
-$color-input-metric-background: $color-input-background;
-$color-input-metric-border: $color-input-filled-border;
-$color-input-metric-shadow: $color-input-shadow;
-$color-input-metric-button-box-background: rgba(210,218,223,0.30);
-$color-input-metric-button-box-border: $color-input-metric-border;
-$color-input-metric-button-box-text: $color-slate;
-$color-input-metric-placeholder-text: $color-input-placeholder-text;
-$color-input-metric-filled-background: $color-input-metric-background;
-$color-input-metric-filled-border: $color-input-metric-border;
-$color-input-metric-filled-shadow: $color-input-metric-shadow;
-$color-input-metric-filled-text: $color-input-text;
-$color-input-metric-filled-button-box-background: $color-input-metric-button-box-background;
-$color-input-metric-filled-button-box-border: $color-input-metric-filled-border;
-$color-input-metric-filled-button-box-text: $color-input-metric-button-box-text;
-$color-input-metric-hovered-background: $color-input-metric-background;
-$color-input-metric-hovered-border: $color-input-hovered-border;
-$color-input-metric-hovered-shadow: $color-input-metric-shadow;
-$color-input-metric-hovered-text: #818B8F;
-$color-input-metric-hovered-button-box-background: $color-input-metric-button-box-background;
-$color-input-metric-hovered-button-box-border: #B9C2C9;
-$color-input-metric-hovered-button-box-text: $color-input-metric-button-box-text;
-$color-input-metric-focused-background: $color-input-metric-background;
-$color-input-metric-focused-border: $color-input-focused-border;
-$color-input-metric-focused-shadow-outset: $color-input-focused-shadow-outset;
-$color-input-metric-focused-shadow-inset: $color-input-focused-shadow-inset;
-$color-input-metric-focused-text: #818B8F;
-$color-input-metric-focused-button-box-background: $color-input-metric-button-box-background;
-$color-input-metric-focused-button-box-border: #B9C2C9;
-$color-input-metric-focused-button-box-shadow: rgba(0,0,0,0.10);
-$color-input-metric-focused-button-box-text: $color-input-metric-button-box-text;
-$color-input-metric-errored-background-stop1: $color-input-metric-background;
-$color-input-metric-errored-background-stop2: #FCFEFF;
-$color-input-metric-errored-border: #FF4C4C;
-$color-input-metric-errored-shadow: rgba(83,83,83,0.18);
-$color-input-metric-errored-text: $color-input-errored-text;
-$color-input-metric-errored-button-box-background: #FF4D4B;
-$color-input-metric-errored-button-box-border: $color-input-errored-button-box-border;
-$color-input-metric-errored-button-box-text: $color-input-errored-button-box-text;
-$color-input-metric-disabled-background: $color-input-metric-background;
-$color-input-metric-disabled-border: #D2DADF;
-$color-input-metric-disabled-shadow: $color-input-metric-shadow;
-$color-input-metric-disabled-text: $color-solitude;
-$color-input-metric-disabled-button-box-background: $color-input-metric-background;
-$color-input-metric-disabled-button-box-border: $color-input-metric-disabled-border;
-$color-input-metric-disabled-button-box-shadow: $color-input-metric-shadow;
-$color-input-metric-disabled-button-box-text: #D8E1E6;
-// -- input-browse
-$color-input-browse-background: $color-input-background;
-$color-input-browse-border: $color-input-filled-border;
-$color-input-browse-shadow: $color-input-shadow;
-$color-input-browse-placeholder-text: $color-input-placeholder-text;
-$color-input-browse-button-background-stop1: $color-button-default-background-stop1;
-$color-input-browse-button-background-stop2: $color-button-default-background-stop2;
-$color-input-browse-button-border: $color-button-default-border;
-$color-input-browse-button-shadow: $color-button-default-shadow;
-$color-input-browse-button-text: $color-button-default-text;
-$color-input-browse-hovered-background: $color-input-browse-background;
-$color-input-browse-hovered-border: $color-input-browse-border;
-$color-input-browse-hovered-shadow: $color-input-browse-shadow;
-$color-input-browse-hovered-text: $color-input-text;
-$color-input-browse-button-hovered-background-stop1: $color-button-default-hovered-background-stop1;
-$color-input-browse-button-hovered-background-stop2: $color-button-default-hovered-background-stop2;
-$color-input-browse-button-hovered-text: $color-input-browse-button-text;
-$color-input-browse-focused-background: $color-input-browse-background;
-$color-input-browse-focused-border: $color-input-focused-border;
-$color-input-browse-focused-shadow-outset: $color-input-focused-shadow-outset;
-$color-input-browse-focused-shadow-inset: $color-input-focused-shadow-inset;
-$color-input-browse-focused-text: $color-input-focused-text;
-$color-input-browse-button-focused-background-stop1: $color-button-default-hovered-background-stop1;
-$color-input-browse-button-focused-background-stop2: $color-button-default-hovered-background-stop2;
-$color-input-browse-button-focused-border: #B9C2C9;
-$color-input-browse-button-focused-shadow: $color-input-browse-button-shadow;
-$color-input-browse-button-focused-text: $color-input-browse-button-text;
-$color-input-browse-errored-background: $color-input-browse-background;
-$color-input-browse-errored-border: $color-input-errored-border;
-$color-input-browse-errored-shadow: $color-input-browse-shadow;
-$color-input-browse-errored-text: $color-input-errored-text;
-$color-input-browse-button-box-errored-background: $color-input-errored-button-box-background;
-$color-input-browse-button-box-errored-border: $color-input-errored-button-box-border;
-$color-input-browse-button-box-errored-text: $color-input-errored-button-box-text;
-$color-input-browse-button-errored-background-stop1: $color-input-browse-button-background-stop1;
-$color-input-browse-button-errored-background-stop2: $color-input-browse-button-background-stop1;
-$color-input-browse-button-errored-border: $color-input-browse-button-border;
-$color-input-browse-button-errored-shadow: $color-input-browse-button-shadow;
-$color-input-browse-button-errored-text: $color-input-browse-button-text;
-// -- input-rounded
-$color-input-rounded-background: $color-input-background;
-$color-input-rounded-border: #D2DADF;
-$color-input-rounded-shadow: $color-input-shadow;
-$color-input-rounded-placeholder-text: $color-input-placeholder-text;
-$color-input-rounded-active-background: $color-input-rounded-background;
-$color-input-rounded-active-border: #87BBD3;
-$color-input-rounded-active-outset-shadow: $color-input-focused-shadow-outset;
-$color-input-rounded-active-inset-shadow: $color-input-rounded-shadow;
-$color-input-rounded-active-text: $color-dark;
-$color-input-rounded-disabled-background: $color-input-rounded-background;
-$color-input-rounded-disabled-border: rgba($color-input-rounded-border, .5);
-$color-input-rounded-disabled-shadow: #D2D8DD;
-$color-input-rounded-disabled-text: #B2BBC1;
-$color-input-rounded-dim-background: #2B2E31;
-$color-input-rounded-dim-border: $color-input-rounded-dim-background;
-$color-input-rounded-dim-text: $color-white;
-$color-input-rounded-dim-placeholder-text: #818B8F;
-$color-input-rounded-dim-hovered-background: #25282D;
-$color-input-rounded-dim-hovered-border: $color-input-rounded-dim-hovered-background;
-$color-input-rounded-dim-hovered-text: #818B8F;
-$color-input-rounded-dim-focused-background: #1C1D1F;
-$color-input-rounded-dim-focused-border: $color-input-rounded-dim-focused-background;
-$color-input-rounded-dim-disabled-background: $color-input-rounded-dim-background;
-$color-input-rounded-dim-disabled-text: rgba($color-input-rounded-dim-placeholder-text, .5);
-$color-input-rounded-dark-background: #161618;
-$color-input-rounded-dark-border: #282A2C;
-$color-input-rounded-dark-text: $color-white;
-$color-input-rounded-dark-placeholder-text: #818B8F;
-$color-input-rounded-dark-filled-background: #0F0F11;
-$color-input-rounded-dark-filled-border: $color-input-rounded-dark-border;
-$color-input-rounded-dark-filled-text: $color-input-rounded-dark-text;
-$color-input-rounded-dark-hovered-background: $color-true-black;
-$color-input-rounded-dark-hovered-border: $color-input-rounded-dark-border;
-$color-input-rounded-dark-hovered-text: $color-white;
-$color-input-rounded-dark-disabled-background: #18191B;
-$color-input-rounded-dark-disabled-text: $color-input-rounded-dark-text;
 
 // SELECTS
 // -- standard select
@@ -281,7 +76,7 @@ $color-select-border: #D1D9DE;
 $color-select-outset-shadow: rgba(242,245,247,0.80);
 $color-select-inset-shadow: rgba(247,249,250,0.50);
 $color-select-text: $color-dark;
-$color-select-triangle: #626979;
+$color-select-triangle: #5B667A;
 $color-select-hovered-background-stop1: $color-select-background-stop1;
 $color-select-hovered-background-stop2: $color-select-background-stop2;
 $color-select-hovered-border: #B8C2C8;
@@ -307,74 +102,6 @@ $color-select-disabled-shadow: #D2D8DD;
 $color-select-disabled-text: $color-black;
 $color-select-disabled-triangle: $color-select-triangle;
 
-// ON/OFF TOGGLE
-$color-toggle-switch-background: #F1F6FA;
-$color-toggle-switch-border: #E2E7EB;
-$color-toggle-knob-background: $color-white;
-$color-toggle-knob-border: #D9E1E6;
-$color-toggle-switch-hovered-background: $color-toggle-switch-background;
-$color-toggle-switch-hovered-border: $color-input-hovered-border;
-$color-toggle-knob-hovered-background: $color-toggle-knob-background;
-$color-toggle-knob-hovered-border: $color-toggle-knob-border;
-$color-toggle-switch-checked-background: #2FB2ED;
-$color-toggle-switch-checked-border: #2E99CB;
-$color-toggle-knob-checked-background: $color-toggle-knob-background;
-$color-toggle-knob-checked-border: rgba(0,0,0,0.32);
-$color-toggle-knob-checked-shadow: rgba(0,0,0,0.32);
-$color-toggle-switch-checked-indicator: $color-button-primary-text;
-$color-toggle-switch-checked-indicator-shadow: $color-button-primary-text-shadow;
-$color-toggle-switch-disabled-background: rgba($color-toggle-switch-background, .8);
-$color-toggle-switch-disabled-border: rgba($color-toggle-switch-border, .8);
-$color-toggle-knob-disabled-background: $color-toggle-knob-background;
-$color-toggle-knob-disabled-border: rgba($color-toggle-knob-border, .8);
-$color-toggle-switch-checked-disabled-background: rgba($color-toggle-switch-checked-background, .5);
-$color-toggle-switch-checked-disabled-border: rgba($color-toggle-switch-checked-border, .5);
-$color-toggle-switch-checked-indicator-disabled-background: rgba($color-toggle-switch-checked-indicator, .5);
-$color-toggle-switch-checked-indicator-disabled-shadow: rgba($color-toggle-switch-checked-indicator-shadow, .5);
-
-// CHECKBOXES
-// -- standard checkbox
-$color-checkbox-background: $color-input-background;
-$color-checkbox-border: #D1DADF;
-$color-checkbox-shadow: rgba(0,0,0,0.20);
-$color-checkbox-hovered-background: $color-checkbox-background;
-$color-checkbox-hovered-border: #B8C3C9;
-$color-checkbox-hovered-shadow: $color-checkbox-shadow;
-$color-checkbox-active-background: $color-checkbox-background;
-$color-checkbox-active-border: #B6D1E0;
-$color-checkbox-active-shadow-outset: rgba(135,187,212,0.40);
-$color-checkbox-active-shadow-inset: $color-checkbox-shadow;
-$color-checkbox-selected-background: $color-checkbox-background;
-$color-checkbox-selected-border: $color-checkbox-border;
-$color-checkbox-selected-shadow: $color-checkbox-shadow;
-$color-checkbox-selected-check: $color-cta;
-$color-checkbox-selected-hovered-background: $color-checkbox-background;
-$color-checkbox-selected-hovered-border: $color-checkbox-active-border;
-$color-checkbox-selected-hovered-shadow: $color-checkbox-shadow;
-$color-checkbox-disabled-background: #F4F8FB;
-$color-checkbox-disabled-border: #E8ECEF;
-$color-checkbox-selected-disabled-background: $color-checkbox-disabled-background;
-$color-checkbox-selected-disabled-border: $color-checkbox-disabled-border;
-$color-checkbox-selected-disabled-check: #97D9F6;
-// -- checkbox-dark
-$color-checkbox-dark-background: #99AAB4;
-$color-checkbox-dark-border: #8396A6;
-$color-checkbox-dark-hovered-background: $color-checkbox-dark-background;
-$color-checkbox-dark-hovered-border: #49606F;
-$color-checkbox-dark-active-background: $color-checkbox-dark-background;
-$color-checkbox-dark-active-border: #48606F;
-$color-checkbox-dark-active-shadow-outset: $color-checkbox-active-shadow-outset;
-$color-checkbox-dark-active-shadow-inset: $color-checkbox-shadow;
-$color-checkbox-dark-selected-background: $color-checkbox-dark-background;
-$color-checkbox-dark-selected-border: $color-checkbox-dark-border;
-$color-checkbox-dark-selected-check: $color-white;
-// TODO: MISSING COLORS FOR DARK CHECKBOX SELECTED HOVERED (JUST AN IMG IN SKETCH)
-$color-checkbox-dark-disabled-background: rgba($color-checkbox-dark-background, .5);
-$color-checkbox-dark-disabled-border: rgba($color-checkbox-dark-border, .5);
-$color-checkbox-dark-selected-disabled-background: rgba($color-checkbox-dark-selected-background, .5);
-$color-checkbox-dark-selected-disabled-border: rgba($color-checkbox-dark-selected-border, .5);
-$color-checkbox-dark-selected-disabled-check: $color-checkbox-dark-selected-check;
-
 // BADGES
 $color-badge-background-stop1: #F0F4F7;
 $color-badge-background-stop2: #F5F8FA;
@@ -383,7 +110,7 @@ $color-badge-shadow: rgba(247,249,250,0.50);
 $color-badge-text: #818B8F;
 $color-badge-remove-button-background: $color-white;
 $color-badge-remove-button-border: #D2DADF;
-$color-badge-remove-button-text: $color-button-default-text;
+$color-badge-remove-button-text: $color-slate;
 $color-badge-selected-background-stop1: #F0F5F9;
 $color-badge-selected-background-stop2: #D9E6EC;
 $color-badge-selected-border: #7BA1BB;
@@ -394,111 +121,68 @@ $color-badge-disabled-border: rgba($color-badge-border, .5);
 $color-badge-disabled-shadow: rgba($color-badge-shadow, .5);
 $color-badge-disabled-text: rgba($color-badge-text, .5);
 
-// TOOLTIPS
-$color-tooltip-background: $color-white;
-$color-tooltip-border: $color-geyser;
-$color-tooltip-shadow: rgba(30,33,37,0.20);
-
-// CALENDAR PICKERS
-$color-calendar-picker-date-range-background: $color-snow; // top portion containing date ranges
-$color-calendar-picker-date-range-border: #D2DADF;
-$color-calendar-picker-calendar-background: $color-white; // bottom portion containing the calendar tool
-$color-calendar-picker-calendar-border: $color-calendar-picker-date-range-border;
-$color-calendar-picker-calendar-shadow: $color-tooltip-shadow;
-$color-calendar-picker-date-button-background: $color-calendar-picker-calendar-background; // buttons immediately above calendar tool
-$color-calendar-picker-date-button-border: $color-input-filled-border;
-$color-calendar-picker-date-button-text: $color-button-default-text;
-$color-calendar-picker-head-day-text: $color-charcoal; // Day abbreviations above the calendar tool (Su, Mo, Tu, etc.)
-$color-calendar-picker-days-grid-border: $color-geyser; // Contains the blocks of days
-$color-calendar-picker-day-text: rgba(91,102,122,0.65);
-$color-calendar-picker-day-coming-text: $color-slate;
-$color-calendar-picker-other-month-background: #F0F4F7; // Days greyed out belonging to the prev or next month
-$color-calendar-picker-selected-background: #6EC9F3;
-$color-calendar-picker-selected-text: $color-white;
-$color-calendar-picker-selected-border: #6EC9F3;
-$color-calendar-picker-selected-beginning-end-background: $color-cta;
-$color-calendar-picker-selected-beginning-end-border: rgba(49,61,69,0.20);
-
-// SLIDERS
-$color-slider-thumb-background: #2ab4f2;
-$color-slider-thumb-border: #05a4ec;
-$color-slider-range-markers: #5b6779;
-$color-slider-over-bar: rgba($color-slider-thumb-background, .9);
-$color-slider-under-bar: #eef2f6;
-$color-slider-disabled-thumb-background: #d6e0ea;
-$color-slider-disabled-thumb-text: #8195a5;
-$color-slider-disabled-thumb-border: #b9cbdc;
-$color-slider-disabled-over-bar-disabled: #d6e0ea;
-// -- slider-danger
-$color-slider-danger-over-bar-background: #e74141;
-$color-slider-danger-thumb-background: rgba($color-slider-danger-over-bar-background, .9);
-$color-slider-danger-thumb-border: #d33434;
-// -- slider-warning
-$color-slider-warning-over-bar-background: rgba(#fbcc3c, .9);
-$color-slider-warning-thumb-background: #fbcc3c;
-
 // Scoring
-$score-negative: #F25131;
-$score-negative-highlight: #F7A695;
-$score-negative-highlight-text: #720E0E;
-$score-in-between-orange: #FF8800;
-$score-in-between-orange-highlight: #FFC889;
-$score-in-between-orange-highlight-text: #87530F;
-$score-medium: #FBCC3B;
-$score-medium-highlight: #FBE499;
-$score-medium-highlight-text: #87690F;
-$score-positive: #96CD00;
-$score-positive-highlight: #CAE779;
-$score-positive-highlight-text: #57720E;
-$score-good-green: #068801;
-$score-good-green-highlight: #9DED9A;
-$score-good-green-highlight-text: #0F6E0C;
-$score-good-blue: #1A94DA;
-$score-good-blue-highlight: #CDE9FA;
-$score-good-blue-highlight-text: #0E4972;
-$score-unscored-with-value: #8E9699;
-$score-unscored-with-value-highlight: #D7DEE0;
-$score-unscored-with-value-highlight-text: #444A4D;
-$score-missing-data: #EDEDED;
-$score-missing-data-highlight: #EDEDED;
-$score-missing-data-highlight-text: #575757;
-$score-unable-to-determine: #ABBFD8;
-$score-unable-to-determine-highlight: #DDE4ED;
-$score-unable-to-determine-highlight-text: #444D57;
+$score-red: #F25131;
+$score-red-highlight: #F7A695;
+$score-red-highlight-text: #720E0E;
+$score-orange: #FF8800;
+$score-orange-highlight: #FFC889;
+$score-orange-highlight-text: #87530F;
+$score-yellow: #FBCC3B;
+$score-yellow-highlight: #FBE499;
+$score-yellow-highlight-text: #87690F;
+$score-green: #96CD00;
+$score-green-highlight: #CAE779;
+$score-green-highlight-text: #57720E;
+$score-dark-green: #068801;
+$score-dark-green-highlight: #9DED9A;
+$score-dark-green-highlight-text: #0F6E0C;
+$score-blue: #1A94DA;
+$score-blue-highlight: #CDE9FA;
+$score-blue-highlight-text: #0E4972;
+$score-gray: #8E9699;
+$score-gray-highlight: #D7DEE0;
+$score-gray-highlight-text: #444A4D;
+$score-slate: #EDEDED;
+$score-slate-highlight: #EDEDED;
+$score-slate-highlight-text: #575757;
+$score-infantry-blue: #ABBFD8;
+$score-infantry-blue-highlight: #DDE4ED;
+$score-infantry-blue-highlight-text: #444D57;
 
 $scoreboard-colors: (
 	score: (
-		green: $score-positive,
-		yellow: $score-medium,
-		orange: $score-in-between-orange,
-		red: $score-negative,
-		dark-green: $score-good-green,
-		blue: $score-good-blue,
-		gray: $score-unscored-with-value,
-		slate: $score-missing-data,
-		infantry-blue: $score-unable-to-determine,
+		green: $score-green,
+		yellow: $score-yellow,
+		orange: $score-orange,
+		red: $score-red,
+		dark-green: $score-green,
+		blue: $score-blue,
+		gray: $score-gray,
+		slate: $score-slate,
+		infantry-blue: $score-infantry-blue,
 	),
 	score-highlight: (
-		green: $score-positive-highlight,
-		yellow: $score-medium-highlight,
-		orange: $score-in-between-orange-highlight,
-		red: $score-negative-highlight,
-		dark-green: $score-good-green-highlight,
-		blue: $score-good-blue-highlight,
-		gray: $score-unscored-with-value-highlight,
-		slate: $score-missing-data-highlight,
-		infantry-blue: $score-unable-to-determine-highlight
+		green: $score-green-highlight,
+		yellow: $score-yellow-highlight,
+		orange: $score-orange-highlight,
+		red: $score-red-highlight,
+		dark-green: $score-dark-green-highlight,
+		blue: $score-blue-highlight,
+		gray: $score-gray-highlight,
+		slate: $score-slate-highlight,
+		infantry-blue: $score-infantry-blue-highlight
 	),
 	score-highlight-text: (
-		green: $score-positive-highlight-text,
-		yellow: $score-medium-highlight-text,
-		orange: $score-in-between-orange-highlight-text,
-		red: $score-negative-highlight-text,
-		dark-green: $score-good-green-highlight-text,
-		blue: $score-good-blue-highlight-text,
-		gray: $score-unscored-with-value-highlight-text,
-		slate: $score-missing-data-highlight-text,
-		infantry-blue: $score-unable-to-determine-highlight-text
+		green: $score-green-highlight-text,
+		yellow: $score-yellow-highlight-text,
+		orange: $score-orange-highlight-text,
+		red: $score-red-highlight-text,
+		dark-green: $score-dark-green-highlight-text,
+		blue: $score-blue-highlight-text,
+		gray: $score-gray-highlight-text,
+		slate: $score-slate-highlight-text,
+		infantry-blue: $score-infantry-blue-highlight-text
 	)
 );
 
@@ -512,19 +196,6 @@ $scoreboard-colors: (
 		@return map-get($scoreboard-colors, $color);
 	}
 }
-
-// List of all score colors [CSS class name, color value]
-$score-colors:
-  green $score-positive,
-  yellow $score-medium,
-  orange $score-in-between-orange,
-  red $score-negative,
-  dark-green $score-good-green,
-  blue $score-good-blue,
-  gray $score-unscored-with-value,
-  slate $score-missing-data,
-  infantry-blue $score-unable-to-determine;
-
 
 // Score colors
 $score-green:               #96cd00;
