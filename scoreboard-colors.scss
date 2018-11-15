@@ -258,6 +258,7 @@ $chart-series-fuchsia-dark:             #A31DB8;
 $chart-series-fuchsia-medium:           #E55BFA;
 $chart-series-fuchsia-light:            #F5B5FF;
 
+$chart-series-gray-darker: #313d45;
 $chart-series-gray-dark:                #8E9699;
 $chart-series-gray-medium:              #BCC2C4;
 $chart-series-gray-light:               #D7DEE0;
@@ -294,6 +295,7 @@ $chart-series-colors:
   fuchsia-dark $chart-series-fuchsia-dark,
   fuchsia-medium $chart-series-fuchsia-medium,
   fuchsia-light $chart-series-fuchsia-light,
+  gray-darker $chart-series-gray-darker,
   gray-dark $chart-series-gray-dark,
   gray-medium $chart-series-gray-medium,
   gray-light $chart-series-gray-light,
