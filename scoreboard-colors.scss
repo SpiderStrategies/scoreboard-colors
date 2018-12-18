@@ -122,92 +122,16 @@ $color-badge-disabled-border: rgba($color-badge-border, .5);
 $color-badge-disabled-shadow: rgba($color-badge-shadow, .5);
 $color-badge-disabled-text: rgba($color-badge-text, .5);
 
-// Scoring
-$score-red: #F25131;
-$score-red-highlight: #F7A695;
-$score-red-highlight-text: #720E0E;
-$score-orange: #FF8800;
-$score-orange-highlight: #FFC889;
-$score-orange-highlight-text: #87530F;
-$score-yellow: #FBCC3B;
-$score-yellow-highlight: #FBE499;
-$score-yellow-highlight-text: #87690F;
-$score-green: #96CD00;
-$score-green-highlight: #CAE779;
-$score-green-highlight-text: #57720E;
-$score-dark-green: #068801;
-$score-dark-green-highlight: #9DED9A;
-$score-dark-green-highlight-text: #0F6E0C;
-$score-blue: #1A94DA;
-$score-blue-highlight: #CDE9FA;
-$score-blue-highlight-text: #0E4972;
-$score-gray: #8E9699;
-$score-gray-highlight: #D7DEE0;
-$score-gray-highlight-text: #444A4D;
-$score-slate: #EDEDED;
-$score-slate-highlight: #EDEDED;
-$score-slate-highlight-text: #575757;
-$score-infantry-blue: #ABBFD8;
-$score-infantry-blue-highlight: #DDE4ED;
-$score-infantry-blue-highlight-text: #444D57;
-
-$scoreboard-colors: (
-	score: (
-		green: $score-green,
-		yellow: $score-yellow,
-		orange: $score-orange,
-		red: $score-red,
-		dark-green: $score-green,
-		blue: $score-blue,
-		gray: $score-gray,
-		slate: $score-slate,
-		infantry-blue: $score-infantry-blue,
-	),
-	score-highlight: (
-		green: $score-green-highlight,
-		yellow: $score-yellow-highlight,
-		orange: $score-orange-highlight,
-		red: $score-red-highlight,
-		dark-green: $score-dark-green-highlight,
-		blue: $score-blue-highlight,
-		gray: $score-gray-highlight,
-		slate: $score-slate-highlight,
-		infantry-blue: $score-infantry-blue-highlight
-	),
-	score-highlight-text: (
-		green: $score-green-highlight-text,
-		yellow: $score-yellow-highlight-text,
-		orange: $score-orange-highlight-text,
-		red: $score-red-highlight-text,
-		dark-green: $score-dark-green-highlight-text,
-		blue: $score-blue-highlight-text,
-		gray: $score-gray-highlight-text,
-		slate: $score-slate-highlight-text,
-		infantry-blue: $score-infantry-blue-highlight-text
-	)
-);
-
-// Returns a color or nested color from $scoreboard-colors
-// Ex: background: scoreboardColor(slate)
-// Ex: background: scoreboardColor(slate, score-highlight)
-@function scoreboardColor($color, $category:null) {
-	@if ($category) {
-		@return map-get(map-get($scoreboard-colors, $category), $color);
-	} @else {
-		@return map-get($scoreboard-colors, $color);
-	}
-}
-
 // Score colors
-$score-green:               #96cd00;
-$score-yellow:              #fbcc3c;
-$score-orange:              #ff8800;
-$score-red:                 #f35132;
-$score-dark-green:          #068800;
-$score-blue:                #1b94da;
-$score-gray:                #ededed;
-$score-slate:               #98a3b3;
-$score-infantry-blue:       #abbfd8;
+$score-red: #F25131;
+$score-orange: #FF8800;
+$score-yellow: #FBCC3B;
+$score-green: #96CD00;
+$score-dark-green: #068801;
+$score-blue: #1A94DA;
+$score-gray: #EDEDED;
+$score-slate: #8E9699;
+$score-infantry-blue: #ABBFD8;
 
 $score-colors:
   green $score-green,
@@ -220,39 +144,61 @@ $score-colors:
   slate $score-slate,
   infantry-blue $score-infantry-blue;
 
+// These aren't used anywhere yet. They're for colored cells where the text is a darker
+// version of the color and the background is a lighter version. It's defined in the stye
+// kit, but we're setting them programatically elsewhere for now.
+// $score-red-text: #720E0E;
+// $score-red-text-background: #F7A695;
+// $score-orange-text: #87530F;
+// $score-orange-text-background: #FFC889;
+// $score-yellow-text: #87690F;
+// $score-yellow-text-background: #FBE499;
+// $score-green-text: #57720E;
+// $score-green-text-background: #CAE779;
+// $score-dark-green-text: #0F6E0C;
+// $score-dark-green-text-background: #9DED9A;
+// $score-blue-text: #0E4972;
+// $score-blue-text-background: #CDE9FA;
+// $score-gray-text: #575757;
+// $score-gray-text-background: #EDEDED;
+// $score-slate-text: #444A4D;
+// $score-slate-text-background: #D7DEE0;
+// $score-infantry-blue-text: #444D57;
+// $score-infantry-blue-text-background: #DDE4ED;
+
 // Chart series colors
 $chart-series-default:                  rgba(0,0,0,0.18); // Only used for single-series line charts and trendlines
 
 $chart-series-red-dark:                 #C93C20;
-$chart-series-red-medium:               #F25131;
+$chart-series-red-medium:               $score-red;
 $chart-series-red-light:                #F7A695;
 
 $chart-series-orange-dark:              #EB6600;
-$chart-series-orange-medium:            #FF8800;
+$chart-series-orange-medium:            $score-orange;
 $chart-series-orange-light:             #FFC889;
 
 $chart-series-yellow-dark:              #F1A000;
-$chart-series-yellow-medium:            #FBCC3B;
+$chart-series-yellow-medium:            $score-yellow;
 $chart-series-yellow-light:             #FBE499;
 
 $chart-series-green-dark:               #6EAD00;
-$chart-series-green-medium:             #96CD00;
+$chart-series-green-medium:             $score-green;
 $chart-series-green-light:              #CAE779;
 
 $chart-series-turquoise-dark:           #00A9C3;
 $chart-series-turquoise-medium:         #60CBDB;
 $chart-series-turquoise-light:          #CCF3f9;
 
-$chart-series-aqua-dark:                #1988C8;
-$chart-series-aqua-medium:                 #1A94DA;
-$chart-series-aqua-light:               #CDE9FA;
+$chart-series-blue-dark:                #1988C8;
+$chart-series-blue-medium:              $score-blue;
+$chart-series-blue-light:               #CDE9FA;
 
-$chart-series-blue-dark:                #3654D4;
-$chart-series-blue-medium:              #839AFF;
-$chart-series-blue-light:               #C4CFFF;
+$chart-series-periwinkle-dark:          #3654D4;
+$chart-series-periwinkle-medium:        #839AFF;
+$chart-series-periwinkle-light:         #C4CFFF;
 
 $chart-series-purple-dark:              #6D1DB8;
-$chart-series-purple-medium:               #AD5AFA;
+$chart-series-purple-medium:            #AD5AFA;
 $chart-series-purple-light:             #DBB5FF;
 
 $chart-series-fuchsia-dark:             #A31DB8;
@@ -283,12 +229,12 @@ $chart-series-colors:
   turquoise-dark $chart-series-turquoise-dark,
   turquoise-medium $chart-series-turquoise-medium,
   turquoise-light $chart-series-turquoise-light,
-  aqua-dark $chart-series-aqua-dark,
-  aqua-medium $chart-series-aqua-medium,
-  aqua-light $chart-series-aqua-light,
   blue-dark $chart-series-blue-dark,
   blue-medium $chart-series-blue-medium,
   blue-light $chart-series-blue-light,
+  periwinkle-dark $chart-series-periwinkle-dark,
+  periwinkle-medium $chart-series-periwinkle-medium,
+  periwinkle-light $chart-series-periwinkle-light,
   purple-dark $chart-series-purple-dark,
   purple-medium $chart-series-purple-medium,
   purple-light $chart-series-purple-light,
@@ -305,28 +251,6 @@ $chart-series-colors:
 // Other Chart Colors
 $color-chart-text:                  #474B57;
 $color-chart-background:            #ffffff;
-
-// Gauge Color override used to set special styling to 'juice up' and balance the gauge colors
-@function overrideColors($list) {
-  $result: ();
-
-  @each $color-name, $color-value in $list {
-    // A couple score colors are differnt from the versions we use everywhere else
-    // in the app. We only use these for the color gradients.
-    // They override
-    @if $color-name == red  {
-      $result: append($result, $color-name #f23410);
-    } @else if $color-name == yellow {
-      $result: append($result, $color-name #ffd553);
-    } @else {
-      $result: append($result, $color-name $color-value);
-    }
-  }
-
-  @return $result;
-}
-
-$gauge-gradient-colors: overrideColors($score-colors);
 
 // Tooltip
 $tooltip-header-bg:                 #fafbfc;
