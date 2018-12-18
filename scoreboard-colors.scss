@@ -36,6 +36,7 @@ $color-dark: #474B57;
 $color-black: #313D45;
 $color-white: #FFFFFF;
 $color-true-black: #000000;
+$color-error: #FF4D4B;
 
 // INPUTS
 // -- standard input
@@ -57,10 +58,10 @@ $color-input-focused-shadow-outset: rgba(47,177,237,0.20);
 $color-input-focused-shadow-inset: $color-input-shadow;
 $color-input-focused-text: $color-black;
 $color-input-errored-background: $color-input-background;
-$color-input-errored-border: #FF4D4B;
+$color-input-errored-border: $color-error;
 $color-input-errored-shadow: $color-input-shadow;
 $color-input-errored-text: #EF4848;
-$color-input-errored-button-box-background: #FF4D4B;
+$color-input-errored-button-box-background: $color-input-errored-background;
 $color-input-errored-button-box-border: #CD1A1A;
 $color-input-errored-button-box-text: $color-white;
 $color-input-disabled-background: $color-input-background;
@@ -90,7 +91,7 @@ $color-select-focused-inset-shadow: $color-input-shadow;
 $color-select-focused-text: $color-select-text;
 $color-select-errored-background-stop1: $color-select-background-stop1;
 $color-select-errored-background-stop2: $color-select-background-stop2;
-$color-select-errored-border: #FF4C4C;
+$color-select-errored-border: $color-input-errored-border;
 $color-select-errored-shadow: rgba(83,83,83,0.18);
 $color-select-errored-text: $color-input-errored-text;
 $color-select-button-box-errored-background: $color-input-errored-button-box-background;
@@ -340,5 +341,5 @@ $tooltip-dark-bg:                   #18191b;
 $tooltip-dark-border:               #242629;
 $tooltip-dark-text:                 #e1e8eb;
 $tooltip-breadcrumb:                #818181;
-$tooltip-sub-header:                rgba(#5B667A, .9);
-$tooltip-sub-content:               rgba(#474B57, .4);
+$tooltip-sub-header: rgba($color-slate, .9);
+$tooltip-sub-content: rgba($color-dark, .4);
