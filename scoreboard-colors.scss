@@ -38,6 +38,14 @@ $color-white: #FFFFFF;
 $color-true-black: #000000;
 $color-error: #FF4D4B;
 
+// FIXME: We're going to wait on another update from the designers regarding
+// colors which were previously set for these palate colors.
+// https://basecamp.com/1824967/projects/4444406/messages/35987104#comment_683259355
+// See this github comment for a list of those old colors which are in question
+// and are to possibly be changed in the "phase 2" of our color update
+// https://github.com/SpiderStrategies/Scoreboard/issues/22663#issuecomment-467509913
+
+
 // INPUTS
 // -- standard input
 $color-input-background: $color-white;
