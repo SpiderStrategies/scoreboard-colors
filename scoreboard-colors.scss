@@ -25,15 +25,15 @@
 
 // SIMPLIFIED COLOR PALATE
 $color-cta: #30B2EE;
-$color-snow: #FAFBFD;
-$color-whisper: #F6F7FB;
-$color-ash: #F1F5F8;
-$color-solitude: #E9ECF1;
-$color-geyser: #D8E1E6;
-$color-charcoal: #8195A5;
-$color-slate: #5B667A;
-$color-dark: #474B57;
-$color-black: #313D45;
+$color-snow: #FAFBFC;
+$color-whisper: #F5F7FA;
+$color-ash: #EFF3F7;
+$color-solitude: #E6ECF2;
+$color-geyser: #D8DFE6;
+$color-charcoal: #8B98A6;
+$color-slate: #616D7A;
+$color-dark: #414C57;
+$color-black: #2D3640;
 $color-white: #FFFFFF;
 $color-true-black: #000000;
 $color-error: #FF4D4B;
@@ -77,7 +77,7 @@ $color-select-border: #D1D9DE;
 $color-select-outset-shadow: rgba(242,245,247,0.80);
 $color-select-inset-shadow: rgba(247,249,250,0.50);
 $color-select-text: $color-dark;
-$color-select-triangle: #5B667A;
+$color-select-triangle: $color-slate;
 $color-select-hovered-background-stop1: $color-select-background-stop1;
 $color-select-hovered-background-stop2: $color-select-background-stop2;
 $color-select-hovered-border: #B8C2C8;
@@ -104,7 +104,7 @@ $color-select-disabled-text: $color-black;
 $color-select-disabled-triangle: $color-select-triangle;
 
 // BADGES
-$color-badge-background-stop1: #F0F4F7;
+$color-badge-background-stop1: $color-ash;
 $color-badge-background-stop2: #F5F8FA;
 $color-badge-border: #D1D9DE;
 $color-badge-shadow: rgba(247,249,250,0.50);
@@ -249,21 +249,21 @@ $chart-series-colors:
   lighter-gray $chart-series-lighter-gray;
 
 // Other Chart Colors
-$color-chart-text:                  #474B57;
-$color-chart-background:            #ffffff;
+$color-chart-text:                  $color-dark;
+$color-chart-background:            $color-white;
 
 // Tooltip
-$tooltip-header-bg:                 #fafbfc;
-$tooltip-bg:                        #ffffff;
+$tooltip-header-bg:                 $color-snow;
+$tooltip-bg:                        $color-white;
 $tooltip-border:                    #D2DADF;
-$tooltip-shadow:                    rgba(30,33,37,0.20);
-$tooltip-header-border:             #c8c8c8;
-$tooltip-carrot-shadow:             rgba(0, 0, 0, 0.11);
-$tooltip-carrot-bg:                 #ffffff;
-$tooltip-error-border:              #f69b9b;
-$tooltip-dark-bg:                   #18191b;
+$tooltip-shadow:                    rgba(#1E2125, .20);
+$tooltip-header-border:             #C8C8C8;
+$tooltip-carrot-shadow:             rgba($color-true-black, .11);
+$tooltip-carrot-bg:                 $color-white;
+$tooltip-error-border:              #F69B9B;
+$tooltip-dark-bg:                   #18191B;
 $tooltip-dark-border:               #242629;
-$tooltip-dark-text:                 #e1e8eb;
+$tooltip-dark-text:                 #E1E8EB;
 $tooltip-breadcrumb:                #818181;
 $tooltip-sub-header: rgba($color-slate, .9);
 $tooltip-sub-content: rgba($color-dark, .4);
