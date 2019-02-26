@@ -1,6 +1,6 @@
 {
   "name": "scoreboard-colors",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Sass stylesheets for colors shared between various Scoreboard projects",
   "scripts": {},
   "main": "index.js"
