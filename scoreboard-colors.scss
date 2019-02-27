@@ -38,6 +38,14 @@ $color-white: #FFFFFF;
 $color-true-black: #000000;
 $color-error: #FF4D4B;
 
+// FIXME: We're going to wait on another update from the designers regarding
+// colors which were previously set for these palate colors.
+// https://basecamp.com/1824967/projects/4444406/messages/35987104#comment_683259355
+// See this github comment for a list of those old colors which are in question
+// and are to possibly be changed in the "phase 2" of our color update
+// https://github.com/SpiderStrategies/Scoreboard/issues/22663#issuecomment-467509913
+
+
 // INPUTS
 // -- standard input
 $color-input-background: $color-white;
@@ -54,7 +62,7 @@ $color-input-hovered-shadow: #B2BBC1;
 $color-input-hovered-text: $color-black;
 $color-input-focused-background: $color-input-background;
 $color-input-focused-border: $color-cta;
-$color-input-focused-shadow-outset: rgba(47,177,237,0.20);
+$color-input-focused-shadow-outset: rgba(#2FB1ED,0.20);
 $color-input-focused-shadow-inset: $color-input-shadow;
 $color-input-focused-text: $color-black;
 $color-input-errored-background: $color-input-background;
@@ -74,8 +82,8 @@ $color-input-disabled-text: $color-input-placeholder-text;
 $color-select-background-stop1: $color-white;
 $color-select-background-stop2: #FCFEFF;
 $color-select-border: #D1D9DE;
-$color-select-outset-shadow: rgba(242,245,247,0.80);
-$color-select-inset-shadow: rgba(247,249,250,0.50);
+$color-select-outset-shadow: rgba(#F2F5F7,0.80);
+$color-select-inset-shadow: rgba(#F7F9FA,0.50);
 $color-select-text: $color-dark;
 $color-select-triangle: $color-slate;
 $color-select-hovered-background-stop1: $color-select-background-stop1;
@@ -92,7 +100,7 @@ $color-select-focused-text: $color-select-text;
 $color-select-errored-background-stop1: $color-select-background-stop1;
 $color-select-errored-background-stop2: $color-select-background-stop2;
 $color-select-errored-border: $color-input-errored-border;
-$color-select-errored-shadow: rgba(83,83,83,0.18);
+$color-select-errored-shadow: rgba(#535353,0.18);
 $color-select-errored-text: $color-input-errored-text;
 $color-select-button-box-errored-background: $color-input-errored-button-box-background;
 $color-select-button-box-errored-border: $color-input-errored-button-box-border;
@@ -107,7 +115,7 @@ $color-select-disabled-triangle: $color-select-triangle;
 $color-badge-background-stop1: $color-ash;
 $color-badge-background-stop2: #F5F8FA;
 $color-badge-border: #D1D9DE;
-$color-badge-shadow: rgba(247,249,250,0.50);
+$color-badge-shadow: rgba(#F7F9FA,0.50);
 $color-badge-text: #818B8F;
 $color-badge-remove-button-background: $color-white;
 $color-badge-remove-button-border: #D2DADF;
@@ -167,7 +175,7 @@ $score-colors:
 // $score-infantry-blue-text-background: #DDE4ED;
 
 // Chart series colors
-$chart-series-default:                  rgba(0,0,0,0.18); // Only used for single-series line charts and trendlines
+$chart-series-default:                  rgba($color-true-black,0.18); // Only used for single-series line charts and trendlines
 
 $chart-series-red-dark:                 #C93C20;
 $chart-series-red-medium:               $score-red;
