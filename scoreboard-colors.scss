@@ -176,7 +176,7 @@ $score-colors:
 // $score-infantry-blue-text-background: #DDE4ED;
 
 // Chart series colors
-$chart-series-default:                  rgba($color-true-black,0.18); // Only used for single-series line charts and trendlines
+$chart-series-default:                  rgba($color-true-black, 0.3); // Only used for single-series line charts and trendlines
 
 $chart-series-red-dark:                 #C93C20;
 $chart-series-red-medium:               $score-red;
