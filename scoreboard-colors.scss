@@ -40,6 +40,8 @@ $color-white: #FFFFFF;
 $color-true-black: #000000;
 $color-error: #FF4D4B;
 $color-dolphin: #F7F9FA;
+$color-shadow: #1E2125;
+$color-grey-goose: #F5F8FA;
 // -- END: COLOR PALATTE
 
 // FIXME: We're going to wait on another update from the designers regarding
@@ -118,7 +120,7 @@ $color-select-disabled-triangle: $color-select-triangle;
 // BADGES
 $color-badge-background: $color-whisper;
 $color-badge-background-stop1: $color-ash;
-$color-badge-background-stop2: #F5F8FA;
+$color-badge-background-stop2: $color-grey-goose;
 $color-badge-background: $color-dolphin;
 $color-badge-border: $color-geyser;
 $color-badge-shadow: rgba($color-dolphin,0.50);
@@ -270,17 +272,24 @@ $color-chart-text:                  $color-dark;
 $color-chart-background:            $color-white;
 
 // Tooltip
-$tooltip-header-bg:                 $color-snow;
-$tooltip-bg:                        $color-white;
-$tooltip-border:                    #D2DADF;
-$tooltip-shadow:                    rgba(#1E2125, .20);
-$tooltip-header-border:             #C8C8C8;
-$tooltip-carrot-shadow:             rgba($color-true-black, .11);
-$tooltip-carrot-bg:                 $color-white;
-$tooltip-error-border:              #F69B9B;
-$tooltip-dark-bg:                   #18191B;
-$tooltip-dark-border:               #242629;
-$tooltip-dark-text:                 #E1E8EB;
-$tooltip-breadcrumb:                #818181;
+$tooltip-header-bg: $color-snow;
+$tooltip-bg: $color-white;
+$tooltip-border: $color-geyser;
+$tooltip-shadow: rgba($color-shadow, .20);
+$tooltip-header-border: $color-geyser;
+$tooltip-carrot-shadow: rgba($color-true-black, .11);
+$tooltip-carrot-bg: $tooltip-bg;
+$tooltip-error-border: $color-error;
+$tooltip-breadcrumb: $color-charcoal;
 $tooltip-sub-header: rgba($color-slate, .9);
 $tooltip-sub-content: rgba($color-dark, .4);
+
+// Trees
+$color-tree-background: #393C40;
+$color-tree-node-text-color: #ADB8BC;
+$color-tree-node-text-shadow: rgba($color-true-black, 0.23);
+$color-tree-node-selected-background: #2D3135;
+$color-tree-node-selected-text-color: $color-ash;
+$color-tree-node-transient-border: $color-slate;
+$color-tree-traveling-node-background: #25282D;
+$color-tree-traveling-node-shadow: rgba($color-tree-traveling-node-background,0.50);
