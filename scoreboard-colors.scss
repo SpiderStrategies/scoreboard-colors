@@ -42,6 +42,7 @@ $color-error: #FF4D4B;
 $color-dolphin: #F7F9FA;
 $color-shadow: #1E2125;
 $color-grey-goose: #F5F8FA;
+$color-warning: #FBCC3C;
 // -- END: COLOR PALATTE
 
 // FIXME: We're going to wait on another update from the designers regarding
@@ -288,8 +289,10 @@ $tooltip-sub-content: rgba($color-dark, .4);
 $color-tree-background: #393C40;
 $color-tree-node-text-color: #ADB8BC;
 $color-tree-node-text-shadow: rgba($color-true-black, 0.23);
+$color-tree-node-drag-handle-fill: #555A5E;
 $color-tree-node-selected-background: #2D3135;
 $color-tree-node-selected-text-color: $color-ash;
 $color-tree-node-transient-border: $color-slate;
 $color-tree-traveling-node-background: #25282D;
 $color-tree-traveling-node-shadow: rgba($color-tree-traveling-node-background,0.50);
+$color-tree-editable-highlight: #FFE593;
