@@ -39,10 +39,17 @@ $color-black: #2D3640;
 $color-white: #FFFFFF;
 $color-true-black: #000000;
 $color-error: #FF4D4B;
-$color-dolphin: #F7F9FA;
 $color-shadow: #1E2125;
 $color-grey-goose: #F5F8FA;
-$color-warning: #FBCC3C;
+$color-gold: #FFE593;
+$color-casper: #ADB8BC;
+$color-gray: #64686E;
+$color-mine: #393C40;
+$color-cod: #2D3135;
+$color-pearl: #1F2427;
+$color-aztec: #18191B;
+$color-bunker: #0E0F13;
+$color-night: #0F171D;
 // -- END: COLOR PALATTE
 
 // FIXME: We're going to wait on another update from the designers regarding
@@ -90,7 +97,7 @@ $color-select-background-stop1: $color-white;
 $color-select-background-stop2: #FCFEFF;
 $color-select-border: #D1D9DE;
 $color-select-outset-shadow: rgba(#F2F5F7,0.80);
-$color-select-inset-shadow: $color-dolphin;
+$color-select-inset-shadow: $color-whisper;
 $color-select-text: $color-dark;
 $color-select-triangle: $color-slate;
 $color-select-hovered-background-stop1: $color-select-background-stop1;
@@ -121,10 +128,10 @@ $color-select-disabled-triangle: $color-select-triangle;
 // BADGES
 $color-badge-background: $color-whisper;
 $color-badge-background-stop1: $color-ash;
-$color-badge-background-stop2: $color-grey-goose;
-$color-badge-background: $color-dolphin;
+$color-badge-background-stop2: $color-whisper;
+$color-badge-background: $color-whisper;
 $color-badge-border: $color-geyser;
-$color-badge-shadow: rgba($color-dolphin,0.50);
+$color-badge-shadow: rgba($color-whisper,0.50);
 $color-badge-text: $color-charcoal;
 $color-badge-remove-button-background: $color-white;
 $color-badge-remove-button-border: $color-geyser;
@@ -286,13 +293,13 @@ $tooltip-sub-header: rgba($color-slate, .9);
 $tooltip-sub-content: rgba($color-dark, .4);
 
 // Trees
-$color-tree-background: #393C40;
-$color-tree-node-text-color: #ADB8BC;
+$color-tree-background: $color-mine;
+$color-tree-node-text-color: $color-casper;
 $color-tree-node-text-shadow: rgba($color-true-black, 0.23);
 $color-tree-node-drag-handle-fill: #555A5E;
-$color-tree-node-selected-background: #2D3135;
+$color-tree-node-selected-background: $color-cod;
 $color-tree-node-selected-text-color: $color-ash;
 $color-tree-node-transient-border: $color-slate;
 $color-tree-traveling-node-background: #25282D;
 $color-tree-traveling-node-shadow: rgba($color-tree-traveling-node-background,0.50);
-$color-tree-editable-highlight: #FFE593;
+$color-tree-editable-highlight: $color-gold;
