@@ -1,28 +1,3 @@
-// Mixins to help iterate over the two color arrays
-@mixin standard-fill($color-list)  {
-  @each $color in $color-list {
-    &.#{nth($color, 1)} {
-      fill: nth($color, 2);
-    }
-  }
-}
-@mixin standard-stroke($color-list)  {
-  @each $color in $color-list {
-    &.#{nth($color, 1)} {
-      stroke: nth($color, 2);
-    }
-  }
-}
-
-@mixin lighter-fill-darker-stroke($color-list)  {
-  @each $color in $color-list {
-    &.#{nth($color, 1)} {
-      stroke: mix(#000, nth($color, 2), 12%);
-      fill: mix(#fff, nth($color, 2), 30%);
-    }
-  }
-}
-
 // SIMPLIFIED COLOR PALATE
 // -- START: COLOR PALATTE
 $color-cta: #30B2EE;
@@ -39,19 +14,17 @@ $color-black: #2D3640;
 $color-white: #FFFFFF;
 $color-true-black: #000000;
 $color-error: #FF4D4B;
-$color-dolphin: #F7F9FA;
 $color-shadow: #1E2125;
-$color-grey-goose: #F5F8FA;
-$color-warning: #FBCC3C;
+$color-gold: #FFE593;
+$color-casper: #ADB8BC;
+$color-gray: #64686E;
+$color-mine: #393C40;
+$color-cod: #2D3135;
+$color-pearl: #1F2427;
+$color-aztec: #18191B;
+$color-bunker: #0E0F13;
+$color-night: #0F171D;
 // -- END: COLOR PALATTE
-
-// FIXME: We're going to wait on another update from the designers regarding
-// colors which were previously set for these palate colors.
-// https://basecamp.com/1824967/projects/4444406/messages/35987104#comment_683259355
-// See this github comment for a list of those old colors which are in question
-// and are to possibly be changed in the "phase 2" of our color update
-// https://github.com/SpiderStrategies/Scoreboard/issues/22663#issuecomment-467509913
-
 
 // INPUTS
 // -- standard input
@@ -61,11 +34,11 @@ $color-input-shadow: rgba(#D2D8DD, .6);
 $color-input-text: $color-black;
 $color-input-placeholder-text: $color-silver;
 $color-input-filled-background: $color-input-background;
-$color-input-filled-border: #D2DADF;
+$color-input-filled-border: $color-input-border;
 $color-input-filled-shadow: $color-input-shadow;
 $color-input-hovered-background: $color-input-background;
 $color-input-hovered-border: $color-silver;
-$color-input-hovered-shadow: #B2BBC1;
+$color-input-hovered-shadow: $color-input-shadow;
 $color-input-hovered-text: $color-black;
 $color-input-focused-background: $color-input-background;
 $color-input-focused-border: $color-cta;
@@ -88,9 +61,9 @@ $color-input-disabled-text: $color-input-placeholder-text;
 // -- standard select
 $color-select-background-stop1: $color-white;
 $color-select-background-stop2: #FCFEFF;
-$color-select-border: #D1D9DE;
+$color-select-border: $color-input-border;
 $color-select-outset-shadow: rgba(#F2F5F7,0.80);
-$color-select-inset-shadow: $color-dolphin;
+$color-select-inset-shadow: $color-whisper;
 $color-select-text: $color-dark;
 $color-select-triangle: $color-slate;
 $color-select-hovered-background-stop1: $color-select-background-stop1;
@@ -107,7 +80,6 @@ $color-select-focused-text: $color-select-text;
 $color-select-errored-background-stop1: $color-select-background-stop1;
 $color-select-errored-background-stop2: $color-select-background-stop2;
 $color-select-errored-border: $color-input-errored-border;
-$color-select-errored-shadow: rgba(#535353,0.18);
 $color-select-errored-text: $color-input-errored-text;
 $color-select-button-box-errored-background: $color-input-errored-button-box-background;
 $color-select-button-box-errored-border: $color-input-errored-button-box-border;
@@ -121,10 +93,10 @@ $color-select-disabled-triangle: $color-select-triangle;
 // BADGES
 $color-badge-background: $color-whisper;
 $color-badge-background-stop1: $color-ash;
-$color-badge-background-stop2: $color-grey-goose;
-$color-badge-background: $color-dolphin;
+$color-badge-background-stop2: $color-whisper;
+$color-badge-background: $color-whisper;
 $color-badge-border: $color-geyser;
-$color-badge-shadow: rgba($color-dolphin,0.50);
+$color-badge-shadow: rgba($color-whisper,0.50);
 $color-badge-text: $color-charcoal;
 $color-badge-remove-button-background: $color-white;
 $color-badge-remove-button-border: $color-geyser;
@@ -286,13 +258,38 @@ $tooltip-sub-header: rgba($color-slate, .9);
 $tooltip-sub-content: rgba($color-dark, .4);
 
 // Trees
-$color-tree-background: #393C40;
-$color-tree-node-text-color: #ADB8BC;
+$color-tree-background: $color-mine;
+$color-tree-node-text-color: $color-casper;
 $color-tree-node-text-shadow: rgba($color-true-black, 0.23);
 $color-tree-node-drag-handle-fill: #555A5E;
-$color-tree-node-selected-background: #2D3135;
+$color-tree-node-selected-background: $color-cod;
 $color-tree-node-selected-text-color: $color-ash;
 $color-tree-node-transient-border: $color-slate;
 $color-tree-traveling-node-background: #25282D;
 $color-tree-traveling-node-shadow: rgba($color-tree-traveling-node-background,0.50);
-$color-tree-editable-highlight: #FFE593;
+$color-tree-editable-highlight: $color-gold;
+
+// Mixins to help iterate over the two color arrays
+@mixin standard-fill($color-list)  {
+  @each $color in $color-list {
+    &.#{nth($color, 1)} {
+      fill: nth($color, 2);
+    }
+  }
+}
+@mixin standard-stroke($color-list)  {
+  @each $color in $color-list {
+    &.#{nth($color, 1)} {
+      stroke: nth($color, 2);
+    }
+  }
+}
+
+@mixin lighter-fill-darker-stroke($color-list)  {
+  @each $color in $color-list {
+    &.#{nth($color, 1)} {
+      stroke: mix($color-true-black, nth($color, 2), 12%);
+      fill: mix($color-white, nth($color, 2), 30%);
+    }
+  }
+}
