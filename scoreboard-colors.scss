@@ -158,87 +158,87 @@ $score-colors:
 // $score-infantry-blue-text: #444D57;
 // $score-infantry-blue-text-background: #DDE4ED;
 
-// Chart fields colors
-$chart-field-default:                  rgba($color-true-black,0.18); // Only used for single-field line charts and trendlines
+// Chart series colors
+$chart-serie-default:                  rgba($color-true-black,0.18); // TODO Where is this used
 
-$chart-field-red-dark:                 #C93C20;
-$chart-field-red-medium:               $score-red;
-$chart-field-red-light:                #F7A695;
+$chart-serie-red-dark:                 #C93C20;
+$chart-serie-red-medium:               $score-red;
+$chart-serie-red-light:                #F7A695;
 
-$chart-field-orange-dark:              #EB6600;
-$chart-field-orange-medium:            $score-orange;
-$chart-field-orange-light:             #FFC889;
+$chart-serie-orange-dark:              #EB6600;
+$chart-serie-orange-medium:            $score-orange;
+$chart-serie-orange-light:             #FFC889;
 
-$chart-field-yellow-dark:              #F1A000;
-$chart-field-yellow-medium:            $score-yellow;
-$chart-field-yellow-light:             #FBE499;
+$chart-serie-yellow-dark:              #F1A000;
+$chart-serie-yellow-medium:            $score-yellow;
+$chart-serie-yellow-light:             #FBE499;
 
-$chart-field-green-dark:               #6EAD00;
-$chart-field-green-medium:             $score-green;
-$chart-field-green-light:              #CAE779;
+$chart-serie-green-dark:               #6EAD00;
+$chart-serie-green-medium:             $score-green;
+$chart-serie-green-light:              #CAE779;
 
-$chart-field-turquoise-dark:           #00A9C3;
-$chart-field-turquoise-medium:         #60CBDB;
-$chart-field-turquoise-light:          #CCF3f9;
+$chart-serie-turquoise-dark:           #00A9C3;
+$chart-serie-turquoise-medium:         #60CBDB;
+$chart-serie-turquoise-light:          #CCF3f9;
 
-$chart-field-blue-dark:                #1988C8;
-$chart-field-blue-medium:              $score-blue;
-$chart-field-blue-light:               #CDE9FA;
+$chart-serie-blue-dark:                #1988C8;
+$chart-serie-blue-medium:              $score-blue;
+$chart-serie-blue-light:               #CDE9FA;
 
-$chart-field-periwinkle-dark:          #3654D4;
-$chart-field-periwinkle-medium:        #839AFF;
-$chart-field-periwinkle-light:         #C4CFFF;
+$chart-serie-periwinkle-dark:          #3654D4;
+$chart-serie-periwinkle-medium:        #839AFF;
+$chart-serie-periwinkle-light:         #C4CFFF;
 
-$chart-field-purple-dark:              #6D1DB8;
-$chart-field-purple-medium:            #AD5AFA;
-$chart-field-purple-light:             #DBB5FF;
+$chart-serie-purple-dark:              #6D1DB8;
+$chart-serie-purple-medium:            #AD5AFA;
+$chart-serie-purple-light:             #DBB5FF;
 
-$chart-field-fuchsia-dark:             #A31DB8;
-$chart-field-fuchsia-medium:           #E55BFA;
-$chart-field-fuchsia-light:            #F5B5FF;
+$chart-serie-fuchsia-dark:             #A31DB8;
+$chart-serie-fuchsia-medium:           #E55BFA;
+$chart-serie-fuchsia-light:            #F5B5FF;
 
-$chart-field-gray-dark:                #8E9699;
-$chart-field-gray-medium:              #BCC2C4;
-$chart-field-gray-light:               #D7DEE0;
+$chart-serie-gray-dark:                #8E9699;
+$chart-serie-gray-medium:              #BCC2C4;
+$chart-serie-gray-light:               #D7DEE0;
 
-$chart-field-initiative-budget:        #2164bd;
-$chart-field-initiative-schedule:      #8977b2;
-$chart-field-lighter-gray:             #f3f5f6;
+$chart-serie-initiative-budget:        #2164bd;
+$chart-serie-initiative-schedule:      #8977b2;
+$chart-serie-lighter-gray:             #f3f5f6;
 
-$chart-fields-colors:
-  red-dark $chart-field-red-dark,
-  red-medium $chart-field-red-medium,
-  red-light $chart-field-red-light,
-  orange-dark $chart-field-orange-dark,
-  orange-medium $chart-field-orange-medium,
-  orange-light $chart-field-orange-light,
-  yellow-dark $chart-field-yellow-dark,
-  yellow-medium $chart-field-yellow-medium,
-  yellow-light $chart-field-yellow-light,
-  green-dark $chart-field-green-dark,
-  green-medium $chart-field-green-medium,
-  green-light $chart-field-green-light,
-  turquoise-dark $chart-field-turquoise-dark,
-  turquoise-medium $chart-field-turquoise-medium,
-  turquoise-light $chart-field-turquoise-light,
-  blue-dark $chart-field-blue-dark,
-  blue-medium $chart-field-blue-medium,
-  blue-light $chart-field-blue-light,
-  periwinkle-dark $chart-field-periwinkle-dark,
-  periwinkle-medium $chart-field-periwinkle-medium,
-  periwinkle-light $chart-field-periwinkle-light,
-  purple-dark $chart-field-purple-dark,
-  purple-medium $chart-field-purple-medium,
-  purple-light $chart-field-purple-light,
-  fuchsia-dark $chart-field-fuchsia-dark,
-  fuchsia-medium $chart-field-fuchsia-medium,
-  fuchsia-light $chart-field-fuchsia-light,
-  gray-dark $chart-field-gray-dark,
-  gray-medium $chart-field-gray-medium,
-  gray-light $chart-field-gray-light,
-  initiative-budget $chart-field-initiative-budget,
-  initiative-schedule $chart-field-initiative-schedule,
-  lighter-gray $chart-field-lighter-gray;
+$chart-series-colors:
+  red-dark $chart-serie-red-dark,
+  red-medium $chart-serie-red-medium,
+  red-light $chart-serie-red-light,
+  orange-dark $chart-serie-orange-dark,
+  orange-medium $chart-serie-orange-medium,
+  orange-light $chart-serie-orange-light,
+  yellow-dark $chart-serie-yellow-dark,
+  yellow-medium $chart-serie-yellow-medium,
+  yellow-light $chart-serie-yellow-light,
+  green-dark $chart-serie-green-dark,
+  green-medium $chart-serie-green-medium,
+  green-light $chart-serie-green-light,
+  turquoise-dark $chart-serie-turquoise-dark,
+  turquoise-medium $chart-serie-turquoise-medium,
+  turquoise-light $chart-serie-turquoise-light,
+  blue-dark $chart-serie-blue-dark,
+  blue-medium $chart-serie-blue-medium,
+  blue-light $chart-serie-blue-light,
+  periwinkle-dark $chart-serie-periwinkle-dark,
+  periwinkle-medium $chart-serie-periwinkle-medium,
+  periwinkle-light $chart-serie-periwinkle-light,
+  purple-dark $chart-serie-purple-dark,
+  purple-medium $chart-serie-purple-medium,
+  purple-light $chart-serie-purple-light,
+  fuchsia-dark $chart-serie-fuchsia-dark,
+  fuchsia-medium $chart-serie-fuchsia-medium,
+  fuchsia-light $chart-serie-fuchsia-light,
+  gray-dark $chart-serie-gray-dark,
+  gray-medium $chart-serie-gray-medium,
+  gray-light $chart-serie-gray-light,
+  initiative-budget $chart-serie-initiative-budget,
+  initiative-schedule $chart-serie-initiative-schedule,
+  lighter-gray $chart-serie-lighter-gray;
 
 // Other Chart Colors
 $color-chart-text:                  $color-dark;
