@@ -159,7 +159,7 @@ $score-colors:
 // $score-infantry-blue-text-background: #DDE4ED;
 
 // Chart series colors
-$chart-serie-default:                  rgba($color-true-black,0.18); // TODO Where is this used
+$chart-serie-default:                  rgba($color-true-black,0.18);
 
 $chart-serie-red-dark:                 #C93C20;
 $chart-serie-red-medium:               $score-red;
@@ -206,6 +206,7 @@ $chart-serie-initiative-schedule:      #8977b2;
 $chart-serie-lighter-gray:             #f3f5f6;
 
 $chart-series-colors:
+  default $chart-serie-default,
   red-dark $chart-serie-red-dark,
   red-medium $chart-serie-red-medium,
   red-light $chart-serie-red-light,
