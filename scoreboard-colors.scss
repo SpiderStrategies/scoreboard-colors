@@ -299,10 +299,3 @@ $color-tree-editable-highlight: $color-gold;
     }
   }
 }
-
-// Expose the chart serie colors as css3 variables. Used by JS
-:root {
-  @each $color in $chart-series-colors {
-    --serie-#{nth($color, 1)}: #{nth($color, 2)};
-  }
-}
