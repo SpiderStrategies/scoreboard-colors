@@ -246,9 +246,21 @@ $chart-series-colors:
   initiative-schedule $chart-serie-initiative-schedule,
   lighter-gray $chart-serie-lighter-gray;
 
-// Other Chart Colors
-$color-chart-text:                  $color-dark;
-$color-chart-background:            $color-white;
+// Widget colors (includes charts)
+$color-chart-axis-label:            $color-dark;
+$color-widget-primary-label:        $color-black; //used to grab attention. The main value
+$color-widget-secondary-label:      $color-dark; //less important information
+$color-widget-background:           $color-white;
+@mixin labelOnColoredBackground() {
+  // Some DOM node types use fill, some use color
+  fill: $color-widget-primary-label;
+  color: $color-widget-primary-label;
+
+  text-shadow: 0 1px 1px rgba($color-white, 0.5);
+  // #22140 need the mouse to ignore the <text> elements so that the
+  // <title> on the svg path is used for hover text
+  pointer-events: none;
+}
 
 // Tooltip
 $tooltip-header-bg: $color-snow;
