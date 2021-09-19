@@ -261,6 +261,18 @@ $color-widget-background:           $color-white;
   // <title> on the svg path is used for hover text
   pointer-events: none;
 }
+// This adjusts the whiteness and saturation of a scoring color to be used for gradients. After quite
+// a bit of trial and error, I found that mixing white for brightness and and black darkness works better
+// than calling scale-color on lightness. That's because some of the color like green became blown out
+// when getting lighter, and mixing black gives a smooth smokey color for darkness. Throwing a little saturation
+// in also counteracts things getting washed out with white/black mixing.
+@function coloredBackgroundAdjust($color, $whitenessAdjustment, $saturationAdjustment: 0) {
+  @if $whitenessAdjustment > 0 {
+    @return scale-color(mix(white, $color, $whitenessAdjustment), $saturation: $saturationAdjustment);
+  } @else {
+    @return scale-color(mix(black, $color, -1 * $whitenessAdjustment), $saturation: $saturationAdjustment);
+  }
+}
 
 // Tooltip
 $tooltip-header-bg: $color-snow;
