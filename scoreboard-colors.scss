@@ -246,9 +246,33 @@ $chart-series-colors:
   initiative-schedule $chart-serie-initiative-schedule,
   lighter-gray $chart-serie-lighter-gray;
 
-// Other Chart Colors
-$color-chart-text:                  $color-dark;
-$color-chart-background:            $color-white;
+// Widget colors (includes charts)
+$color-chart-axis-label:            $color-dark;
+$color-widget-primary-label:        $color-black; //used to grab attention. The main value
+$color-widget-secondary-label:      $color-dark; //less important information
+$color-widget-background:           $color-white;
+@mixin labelOnColoredBackground() {
+  // Some DOM node types use fill, some use color
+  fill: $color-widget-primary-label;
+  color: $color-widget-primary-label;
+
+  text-shadow: 0 1px 1px rgba($color-white, 0.5);
+  // #22140 need the mouse to ignore the <text> elements so that the
+  // <title> on the svg path is used for hover text
+  pointer-events: none;
+}
+// This adjusts the whiteness and saturation of a scoring color to be used for gradients. After quite
+// a bit of trial and error, I found that mixing white for brightness and and black darkness works better
+// than calling scale-color on lightness. That's because some of the color like green became blown out
+// when getting lighter, and mixing black gives a smooth smokey color for darkness. Throwing a little saturation
+// in also counteracts things getting washed out with white/black mixing.
+@function coloredBackgroundAdjust($color, $whitenessAdjustment, $saturationAdjustment: 0) {
+  @if $whitenessAdjustment > 0 {
+    @return scale-color(mix(white, $color, $whitenessAdjustment), $saturation: $saturationAdjustment);
+  } @else {
+    @return scale-color(mix(black, $color, -1 * $whitenessAdjustment), $saturation: $saturationAdjustment);
+  }
+}
 
 // Tooltip
 $tooltip-header-bg: $color-snow;
