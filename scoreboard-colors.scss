@@ -114,27 +114,102 @@ $color-badge-disabled-text: rgba($color-badge-text, .5);
 
 // SCORE COLORS
 // -- START: SCORE COLORS
-$score-red: #F25131;
-$score-orange: #FF8800;
-$score-yellow: #FBCC3B;
-$score-green: #96CD00;
+
+$score-red-dark:                 #C93C20;
+$score-red-medium:               #F25131;
+$score-red-light:                #F7A695;
+
+$score-orange-dark:              #EB6600;
+$score-orange-medium:            #FF8800;
+$score-orange-light:             #FFC889;
+
+$score-yellow-dark:              #D0A931;
+$score-yellow-medium:            #FBCC3B;
+$score-yellow-light:             #FBE499;
+
+$score-green-dark:               #6EAD00;
+$score-green-medium:             #96CD00;
+$score-green-light:              #CAE779;
+
+$score-turquoise-dark:           #00A9C3;
+$score-turquoise-medium:         #60CBDB;
+$score-turquoise-light:          #CCF3f9;
+
+$score-blue-dark:                #1988C8;
+$score-blue-medium:              #1A94DA;
+$score-blue-light:               #CDE9FA;
+
+$score-periwinkle-dark:          #3654D4;
+$score-periwinkle-medium:        #839AFF;
+$score-periwinkle-light:         #C4CFFF;
+
+$score-purple-dark:              #6D1DB8;
+$score-purple-medium:            #AD5AFA;
+$score-purple-light:             #DBB5FF;
+
+$score-fuchsia-dark:             #A31DB8;
+$score-fuchsia-medium:           #E55BFA;
+$score-fuchsia-light:            #F5B5FF;
+
+$score-gray-darker:              $color-black;
+$score-gray-dark:                #8E9699;
+$score-gray-medium:              #BCC2C4;
+$score-gray-light:               #D7DEE0;
+
 $score-dark-green: #068801;
-$score-blue: #1A94DA;
 $score-gray: #EDEDED;
 $score-slate: #8E9699;
 $score-infantry-blue: #ABBFD8;
+$score-white: $color-white;
 // -- END: SCORE COLORS
 
 $score-colors:
-  green $score-green,
-  yellow $score-yellow,
-  orange $score-orange,
-  red $score-red,
+  red-dark $score-red-dark,
+  red-medium $score-red-medium,
+  red-light $score-red-light,
+
+  orange-dark $score-orange-dark,
+  orange-medium $score-orange-medium,
+  orange-light $score-orange-light,
+
+  yellow-dark $score-yellow-dark,
+  yellow-medium $score-yellow-medium,
+  yellow-light $score-yellow-light,
+
+  green-dark $score-green-dark,
+  green-medium $score-green-medium,
+  green-light $score-green-light,
+
+  turquoise-dark $score-turquoise-dark,
+  turquoise-medium $score-turquoise-medium,
+  turquoise-light $score-turquoise-light,
+
+  blue-dark $score-blue-dark,
+  blue-medium $score-blue-medium,
+  blue-light $score-blue-light,
+
+  periwinkle-dark $score-periwinkle-dark,
+  periwinkle-medium $score-periwinkle-medium,
+  periwinkle-light $score-periwinkle-light,
+
+  purple-dark $score-purple-dark,
+  purple-medium $score-purple-medium,
+  purple-light $score-purple-light,
+
+  fuchsia-dark $score-fuchsia-dark,
+  fuchsia-medium $score-fuchsia-medium,
+  fuchsia-light $score-fuchsia-light,
+
+  gray-darker $score-gray-darker,
+  gray-dark $score-gray-dark,
+  gray-medium $score-gray-medium,
+  gray-light $score-gray-light,
+
   dark-green $score-dark-green,
-  blue $score-blue,
   gray $score-gray,
   slate $score-slate,
-  infantry-blue $score-infantry-blue;
+  infantry-blue $score-infantry-blue,
+  white $score-white;
 
 // These aren't used anywhere yet. They're for colored cells where the text is a darker
 // version of the color and the background is a lighter version. It's defined in the stye
@@ -163,46 +238,46 @@ $chart-serie-default:                  rgba($color-true-black,0.18);
 
 $chart-serie-white:                    $color-white;
 
-$chart-serie-red-dark:                 #C93C20;
-$chart-serie-red-medium:               $score-red;
-$chart-serie-red-light:                #F7A695;
+$chart-serie-red-dark:                 $score-red-dark;
+$chart-serie-red-medium:               $score-red-medium;
+$chart-serie-red-light:                $score-red-light;
 
-$chart-serie-orange-dark:              #EB6600;
-$chart-serie-orange-medium:            $score-orange;
-$chart-serie-orange-light:             #FFC889;
+$chart-serie-orange-dark:              $score-orange-dark;
+$chart-serie-orange-medium:            $score-orange-medium;
+$chart-serie-orange-light:             $score-orange-light;
 
-$chart-serie-yellow-dark:              #D0A931;
-$chart-serie-yellow-medium:            $score-yellow;
-$chart-serie-yellow-light:             #FBE499;
+$chart-serie-yellow-dark:              $score-yellow-dark;
+$chart-serie-yellow-medium:            $score-yellow-medium;
+$chart-serie-yellow-light:             $score-yellow-light;
 
-$chart-serie-green-dark:               #6EAD00;
-$chart-serie-green-medium:             $score-green;
-$chart-serie-green-light:              #CAE779;
+$chart-serie-green-dark:               $score-green-dark;
+$chart-serie-green-medium:             $score-green-medium;
+$chart-serie-green-light:              $score-green-light;
 
-$chart-serie-turquoise-dark:           #00A9C3;
-$chart-serie-turquoise-medium:         #60CBDB;
-$chart-serie-turquoise-light:          #CCF3f9;
+$chart-serie-turquoise-dark:           $score-turquoise-dark;
+$chart-serie-turquoise-medium:         $score-turquoise-medium;
+$chart-serie-turquoise-light:          $score-turquoise-light;
 
-$chart-serie-blue-dark:                #1988C8;
-$chart-serie-blue-medium:              $score-blue;
-$chart-serie-blue-light:               #CDE9FA;
+$chart-serie-blue-dark:                $score-blue-dark;
+$chart-serie-blue-medium:              $score-blue-medium;
+$chart-serie-blue-light:               $score-blue-light;
 
-$chart-serie-periwinkle-dark:          #3654D4;
-$chart-serie-periwinkle-medium:        #839AFF;
-$chart-serie-periwinkle-light:         #C4CFFF;
+$chart-serie-periwinkle-dark:          $score-periwinkle-dark;
+$chart-serie-periwinkle-medium:        $score-periwinkle-medium;
+$chart-serie-periwinkle-light:         $score-periwinkle-light;
 
-$chart-serie-purple-dark:              #6D1DB8;
-$chart-serie-purple-medium:            #AD5AFA;
-$chart-serie-purple-light:             #DBB5FF;
+$chart-serie-purple-dark:              $score-purple-dark;
+$chart-serie-purple-medium:            $score-purple-medium;
+$chart-serie-purple-light:             $score-purple-light;
 
-$chart-serie-fuchsia-dark:             #A31DB8;
-$chart-serie-fuchsia-medium:           #E55BFA;
-$chart-serie-fuchsia-light:            #F5B5FF;
+$chart-serie-fuchsia-dark:             $score-fuchsia-dark;
+$chart-serie-fuchsia-medium:           $score-fuchsia-medium;
+$chart-serie-fuchsia-light:            $score-fuchsia-light;
 
 $chart-serie-gray-darker:              $color-black;
-$chart-serie-gray-dark:                #8E9699;
-$chart-serie-gray-medium:              #BCC2C4;
-$chart-serie-gray-light:               #D7DEE0;
+$chart-serie-gray-dark:                $score-gray-dark;
+$chart-serie-gray-medium:              $score-gray-medium;
+$chart-serie-gray-light:               $score-gray-light;
 
 $chart-serie-initiative-budget:        #2164bd;
 $chart-serie-initiative-schedule:      #8977b2;
