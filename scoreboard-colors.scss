@@ -377,14 +377,14 @@ $color-tree-editable-highlight: $color-gold;
 // Mixins to help iterate over the two color arrays
 @mixin standard-fill($color-list)  {
   @each $color in $color-list {
-    &.#{nth($color, 1)} {
+    &.#{"" + nth($color, 1)} { // Concat a string to squash sass warnings
       fill: nth($color, 2);
     }
   }
 }
 @mixin standard-stroke($color-list)  {
   @each $color in $color-list {
-    &.#{nth($color, 1)} {
+    &.#{"" + nth($color, 1)} { // Concat a string to squash sass warnings
       stroke: nth($color, 2);
     }
   }
@@ -392,7 +392,7 @@ $color-tree-editable-highlight: $color-gold;
 
 @mixin lighter-fill-darker-stroke($color-list)  {
   @each $color in $color-list {
-    &.#{nth($color, 1)} {
+    &.#{"" + nth($color, 1)} { // Concat a string to squash sass warnings
       stroke: mix($color-true-black, nth($color, 2), 12%);
       fill: mix($color-white, nth($color, 2), 30%);
     }
