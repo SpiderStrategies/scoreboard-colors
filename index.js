@@ -1,6 +1,3 @@
-// so SASS can find the .scss files
-module.exports.includePaths = [ __dirname ]
-
 const WHITE = [255, 255, 255, 1]
 const BLACK = [0, 0, 0, 1]
 
@@ -68,7 +65,7 @@ const getColor = color => {
  * when getting lighter, and mixing black gives a smooth smokey color for darkness. We can't increase saturation
  *because that unintentionally colors grays.
  */
-module.exports.coloredBackgroundAdjust = (colorString, whitenessAdjustment) => {
+const coloredBackgroundAdjust = (colorString, whitenessAdjustment) => {
   let p = (whitenessAdjustment > 0 ? whitenessAdjustment : -1 * whitenessAdjustment) / 100
     , color = getColor(colorString)
     , mixin = whitenessAdjustment > 0 ? WHITE : BLACK
@@ -85,7 +82,7 @@ module.exports.coloredBackgroundAdjust = (colorString, whitenessAdjustment) => {
 /*
  * Receives a *hex* color and adjusts its alpha (opacity)
  */
-module.exports.changeColor = (colorString, alpha = 1) => {
+const changeColor = (colorString, alpha = 1) => {
   let color = getColor(colorString)
   color.rgba[3] = alpha
   return `rgba(${color.rgba.join(', ')})`
@@ -96,7 +93,7 @@ module.exports.changeColor = (colorString, alpha = 1) => {
  * Reverse engineered from libsass implementation:
  *   https://github.com/sass/libsass/blob/0e6b4a2850092356aa3ece07c6b249f0221caced/functions.cpp#L209-L228
  */
-const mix = module.exports.mix = (mixin, color, p = .5 /* 50% default */) => {
+const mix = (mixin, color, p = .5 /* 50% default */) => {
   let w = 2 * p - 1
     , a = mixin[3] - color[3] // alpha
     , w1 = (((w * a === -1) ? w : (w + a) / (1 + w * a)) + 1) / 2
@@ -109,3 +106,6 @@ const mix = module.exports.mix = (mixin, color, p = .5 /* 50% default */) => {
     mixin[3] * p + color[3] * (1 - p)
   ]
 }
+
+export { coloredBackgroundAdjust, changeColor, mix }
+
