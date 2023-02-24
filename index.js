@@ -107,5 +107,5 @@ const mix = (mixin, color, p = .5 /* 50% default */) => {
   ]
 }
 
-export { getColor, coloredBackgroundAdjust, changeColor, mix }
+export { getColor, coloredBackgroundAdjust, changeColor, mix, BLACK, WHITE }
 
