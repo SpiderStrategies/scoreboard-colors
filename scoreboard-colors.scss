@@ -113,214 +113,108 @@ $color-badge-disabled-border: rgba($color-badge-border, .5);
 $color-badge-disabled-shadow: rgba($color-badge-shadow, .5);
 $color-badge-disabled-text: rgba($color-badge-text, .5);
 
-// SCORE COLORS
-// -- START: SCORE COLORS
+// Palette colors. This is a defined list of colors that are generally selectable by
+// a user. These colors are used to style charts, gauges, rich text, etc.
+$palette-red-dark:                 #C93C20;
+$palette-red-medium:               #F25131;
+$palette-red-light:                #F7A695;
 
-$score-red-dark:                 #C93C20;
-$score-red-medium:               #F25131;
-$score-red-light:                #F7A695;
+$palette-orange-dark:              #EB6600;
+$palette-orange-medium:            #FF8800;
+$palette-orange-light:             #FFC889;
 
-$score-orange-dark:              #EB6600;
-$score-orange-medium:            #FF8800;
-$score-orange-light:             #FFC889;
+$palette-yellow-dark:              #EBB000;
+$palette-yellow-medium:            #FBCC3B;
+$palette-yellow-light:             #FBE499;
 
-$score-yellow-dark:              #EBB000;
-$score-yellow-medium:            #FBCC3B;
-$score-yellow-light:             #FBE499;
+$palette-green-dark:               #619900;
+$palette-green-medium:             #96CD00;
+$palette-green-light:              #CAE779;
 
-$score-green-dark:               #619900;
-$score-green-medium:             #96CD00;
-$score-green-light:              #CAE779;
+$palette-turquoise-dark:           #00A9C3;
+$palette-turquoise-medium:         #60CBDB;
+$palette-turquoise-light:          #CCF3f9;
 
-$score-turquoise-dark:           #00A9C3;
-$score-turquoise-medium:         #60CBDB;
-$score-turquoise-light:          #CCF3f9;
+$palette-blue-dark:                #0074BB;
+$palette-blue-medium:              #1A94DA;
+$palette-blue-light:               #CDE9FA;
 
-$score-blue-dark:                #0074BB;
-$score-blue-medium:              #1A94DA;
-$score-blue-light:               #CDE9FA;
+$palette-periwinkle-dark:          #3654D4;
+$palette-periwinkle-medium:        #839AFF;
+$palette-periwinkle-light:         #C4CFFF;
 
-$score-periwinkle-dark:          #3654D4;
-$score-periwinkle-medium:        #839AFF;
-$score-periwinkle-light:         #C4CFFF;
+$palette-purple-dark:              #6D1DB8;
+$palette-purple-medium:            #AD5AFA;
+$palette-purple-light:             #DBB5FF;
 
-$score-purple-dark:              #6D1DB8;
-$score-purple-medium:            #AD5AFA;
-$score-purple-light:             #DBB5FF;
+$palette-fuchsia-dark:             #A31DB8;
+$palette-fuchsia-medium:           #E55BFA;
+$palette-fuchsia-light:            #F5B5FF;
 
-$score-fuchsia-dark:             #A31DB8;
-$score-fuchsia-medium:           #E55BFA;
-$score-fuchsia-light:            #F5B5FF;
+$palette-gray-darker:              $color-black;
+$palette-gray-dark:                #8E9699;
+$palette-gray-medium:              #BCC2C4;
+$palette-gray-light:               #D7DEE0;
 
-$score-gray-darker:              $color-black;
-$score-gray-dark:                #8E9699;
-$score-gray-medium:              #BCC2C4;
-$score-gray-light:               #D7DEE0;
+$palette-gray:                     #EDEDED;
+$palette-slate:                    #8E9699;
+$palette-infantry-blue:            #ABBFD8;
+$palette-white:                    $color-white;
 
-$score-dark-green: #068801;
-$score-gray: #EDEDED;
-$score-slate: #8E9699;
-$score-infantry-blue: #ABBFD8;
-$score-white: $color-white;
-// -- END: SCORE COLORS
+$palette-initiative-budget:        #2164bd;
+$palette-initiative-schedule:      #8977b2;
+$palette-lighter-gray:             #f3f5f6;
 
-$score-colors:
-  red-dark $score-red-dark,
-  red-medium $score-red-medium,
-  red-light $score-red-light,
+$palette-colors:
+  red-dark $palette-red-dark,
+  red-medium $palette-red-medium,
+  red-light $palette-red-light,
 
-  orange-dark $score-orange-dark,
-  orange-medium $score-orange-medium,
-  orange-light $score-orange-light,
+  orange-dark $palette-orange-dark,
+  orange-medium $palette-orange-medium,
+  orange-light $palette-orange-light,
 
-  yellow-dark $score-yellow-dark,
-  yellow-medium $score-yellow-medium,
-  yellow-light $score-yellow-light,
+  yellow-dark $palette-yellow-dark,
+  yellow-medium $palette-yellow-medium,
+  yellow-light $palette-yellow-light,
 
-  green-dark $score-green-dark,
-  green-medium $score-green-medium,
-  green-light $score-green-light,
+  green-dark $palette-green-dark,
+  green-medium $palette-green-medium,
+  green-light $palette-green-light,
 
-  turquoise-dark $score-turquoise-dark,
-  turquoise-medium $score-turquoise-medium,
-  turquoise-light $score-turquoise-light,
+  turquoise-dark $palette-turquoise-dark,
+  turquoise-medium $palette-turquoise-medium,
+  turquoise-light $palette-turquoise-light,
 
-  blue-dark $score-blue-dark,
-  blue-medium $score-blue-medium,
-  blue-light $score-blue-light,
+  blue-dark $palette-blue-dark,
+  blue-medium $palette-blue-medium,
+  blue-light $palette-blue-light,
 
-  periwinkle-dark $score-periwinkle-dark,
-  periwinkle-medium $score-periwinkle-medium,
-  periwinkle-light $score-periwinkle-light,
+  periwinkle-dark $palette-periwinkle-dark,
+  periwinkle-medium $palette-periwinkle-medium,
+  periwinkle-light $palette-periwinkle-light,
 
-  purple-dark $score-purple-dark,
-  purple-medium $score-purple-medium,
-  purple-light $score-purple-light,
+  purple-dark $palette-purple-dark,
+  purple-medium $palette-purple-medium,
+  purple-light $palette-purple-light,
 
-  fuchsia-dark $score-fuchsia-dark,
-  fuchsia-medium $score-fuchsia-medium,
-  fuchsia-light $score-fuchsia-light,
+  fuchsia-dark $palette-fuchsia-dark,
+  fuchsia-medium $palette-fuchsia-medium,
+  fuchsia-light $palette-fuchsia-light,
 
-  gray-darker $score-gray-darker,
-  gray-dark $score-gray-dark,
-  gray-medium $score-gray-medium,
-  gray-light $score-gray-light,
+  gray-darker $palette-gray-darker,
+  gray-dark $palette-gray-dark,
+  gray-medium $palette-gray-medium,
+  gray-light $palette-gray-light,
 
-  dark-green $score-dark-green,
-  gray $score-gray,
-  slate $score-slate,
-  infantry-blue $score-infantry-blue,
-  white $score-white;
+  gray $palette-gray,
+  slate $palette-slate,
+  infantry-blue $palette-infantry-blue,
+  white $palette-white,
 
-// These aren't used anywhere yet. They're for colored cells where the text is a darker
-// version of the color and the background is a lighter version. It's defined in the stye
-// kit, but we're setting them programatically elsewhere for now.
-// $score-red-text: #720E0E;
-// $score-red-text-background: #F7A695;
-// $score-orange-text: #87530F;
-// $score-orange-text-background: #FFC889;
-// $score-yellow-text: #87690F;
-// $score-yellow-text-background: #FBE499;
-// $score-green-text: #57720E;
-// $score-green-text-background: #CAE779;
-// $score-dark-green-text: #0F6E0C;
-// $score-dark-green-text-background: #9DED9A;
-// $score-blue-text: #0E4972;
-// $score-blue-text-background: #CDE9FA;
-// $score-gray-text: #575757;
-// $score-gray-text-background: #EDEDED;
-// $score-slate-text: #444A4D;
-// $score-slate-text-background: #D7DEE0;
-// $score-infantry-blue-text: #444D57;
-// $score-infantry-blue-text-background: #DDE4ED;
-
-// Chart series colors
-$chart-serie-default:                  rgba($color-true-black,0.18);
-
-$chart-serie-white:                    $color-white;
-
-$chart-serie-red-dark:                 $score-red-dark;
-$chart-serie-red-medium:               $score-red-medium;
-$chart-serie-red-light:                $score-red-light;
-
-$chart-serie-orange-dark:              $score-orange-dark;
-$chart-serie-orange-medium:            $score-orange-medium;
-$chart-serie-orange-light:             $score-orange-light;
-
-$chart-serie-yellow-dark:              $score-yellow-dark;
-$chart-serie-yellow-medium:            $score-yellow-medium;
-$chart-serie-yellow-light:             $score-yellow-light;
-
-$chart-serie-green-dark:               $score-green-dark;
-$chart-serie-green-medium:             $score-green-medium;
-$chart-serie-green-light:              $score-green-light;
-
-$chart-serie-turquoise-dark:           $score-turquoise-dark;
-$chart-serie-turquoise-medium:         $score-turquoise-medium;
-$chart-serie-turquoise-light:          $score-turquoise-light;
-
-$chart-serie-blue-dark:                $score-blue-dark;
-$chart-serie-blue-medium:              $score-blue-medium;
-$chart-serie-blue-light:               $score-blue-light;
-
-$chart-serie-periwinkle-dark:          $score-periwinkle-dark;
-$chart-serie-periwinkle-medium:        $score-periwinkle-medium;
-$chart-serie-periwinkle-light:         $score-periwinkle-light;
-
-$chart-serie-purple-dark:              $score-purple-dark;
-$chart-serie-purple-medium:            $score-purple-medium;
-$chart-serie-purple-light:             $score-purple-light;
-
-$chart-serie-fuchsia-dark:             $score-fuchsia-dark;
-$chart-serie-fuchsia-medium:           $score-fuchsia-medium;
-$chart-serie-fuchsia-light:            $score-fuchsia-light;
-
-$chart-serie-gray-darker:              $color-black;
-$chart-serie-gray-dark:                $score-gray-dark;
-$chart-serie-gray-medium:              $score-gray-medium;
-$chart-serie-gray-light:               $score-gray-light;
-
-$chart-serie-initiative-budget:        #2164bd;
-$chart-serie-initiative-schedule:      #8977b2;
-$chart-serie-lighter-gray:             #f3f5f6;
-
-$chart-series-colors:
-  default $chart-serie-default,
-  white $chart-serie-white,
-  red-dark $chart-serie-red-dark,
-  red-medium $chart-serie-red-medium,
-  red-light $chart-serie-red-light,
-  orange-dark $chart-serie-orange-dark,
-  orange-medium $chart-serie-orange-medium,
-  orange-light $chart-serie-orange-light,
-  yellow-dark $chart-serie-yellow-dark,
-  yellow-medium $chart-serie-yellow-medium,
-  yellow-light $chart-serie-yellow-light,
-  green-dark $chart-serie-green-dark,
-  green-medium $chart-serie-green-medium,
-  green-light $chart-serie-green-light,
-  turquoise-dark $chart-serie-turquoise-dark,
-  turquoise-medium $chart-serie-turquoise-medium,
-  turquoise-light $chart-serie-turquoise-light,
-  blue-dark $chart-serie-blue-dark,
-  blue-medium $chart-serie-blue-medium,
-  blue-light $chart-serie-blue-light,
-  periwinkle-dark $chart-serie-periwinkle-dark,
-  periwinkle-medium $chart-serie-periwinkle-medium,
-  periwinkle-light $chart-serie-periwinkle-light,
-  purple-dark $chart-serie-purple-dark,
-  purple-medium $chart-serie-purple-medium,
-  purple-light $chart-serie-purple-light,
-  fuchsia-dark $chart-serie-fuchsia-dark,
-  fuchsia-medium $chart-serie-fuchsia-medium,
-  fuchsia-light $chart-serie-fuchsia-light,
-  gray-darker $chart-serie-gray-darker,
-  gray-dark $chart-serie-gray-dark,
-  gray-medium $chart-serie-gray-medium,
-  gray-light $chart-serie-gray-light,
-  initiative-budget $chart-serie-initiative-budget,
-  initiative-schedule $chart-serie-initiative-schedule,
-  lighter-gray $chart-serie-lighter-gray;
+  initiative-budget $palette-initiative-budget,
+  initiative-schedule $palette-initiative-schedule,
+  lighter-gray $palette-lighter-gray;
 
 // Widget colors (includes charts)
 $color-chart-axis-label:            $color-dark;
@@ -397,5 +291,13 @@ $color-tree-editable-highlight: $color-gold;
       stroke: mix($color-true-black, nth($color, 2), 12%);
       fill: mix($color-white, nth($color, 2), 30%);
     }
+  }
+}
+
+// Expose the all the palette colors as css3 variables. Used by JS components
+:root {
+  --palette-colors: #{$palette-colors};
+  @each $color in $palette-colors {
+    --palette-color-#{"" + nth($color, 1)}: #{"" + nth($color, 2)};
   }
 }
