@@ -216,28 +216,6 @@ $palette-colors:
   initiative-schedule $palette-initiative-schedule,
   lighter-gray $palette-lighter-gray;
 
-// These aren't used anywhere yet. They're for colored cells where the text is a darker
-// version of the color and the background is a lighter version. It's defined in the stye
-// kit, but we're setting them programatically elsewhere for now.
-// $score-red-text: #720E0E;
-// $score-red-text-background: #F7A695;
-// $score-orange-text: #87530F;
-// $score-orange-text-background: #FFC889;
-// $score-yellow-text: #87690F;
-// $score-yellow-text-background: #FBE499;
-// $score-green-text: #57720E;
-// $score-green-text-background: #CAE779;
-// $score-dark-green-text: #0F6E0C;
-// $score-dark-green-text-background: #9DED9A;
-// $score-blue-text: #0E4972;
-// $score-blue-text-background: #CDE9FA;
-// $score-gray-text: #575757;
-// $score-gray-text-background: #EDEDED;
-// $score-slate-text: #444A4D;
-// $score-slate-text-background: #D7DEE0;
-// $score-infantry-blue-text: #444D57;
-// $score-infantry-blue-text-background: #DDE4ED;
-
 // Widget colors (includes charts)
 $color-chart-axis-label:            $color-dark;
 $color-widget-primary-label:        $color-black; //used to grab attention. The main value
