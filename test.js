@@ -1,7 +1,6 @@
-const test = require('node:test')
-    , assert = require('node:assert/strict')
-    , coloredBackgroundAdjust = require('./index').coloredBackgroundAdjust
-    , changeColor = require('./index').changeColor
+import {test} from 'node:test'
+import * as assert from 'node:assert/strict'
+import {changeColor, coloredBackgroundAdjust} from './index.js'
 
 // In the future, this test is going to look obnoxious, but
 // it was created when we migrated coloredBackgroundAdjust from sass to
