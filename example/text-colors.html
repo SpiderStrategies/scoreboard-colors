@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Font text examples based on background colors</title>
+    <link rel="stylesheet" href="scoreboard-colors.css">
+    <style>
+
+      body {
+        margin: 50px 100px;
+      }
+
+      .grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .grid-box {
+        width: calc(33.33333% - 10px);
+        height: 200px;
+      }
+
+      .grid-box {
+        font-size: 24px;
+        text-transform: uppercase;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+
+      .grid-box.light {
+        color: #FFFFFF;
+      }
+
+      .grid-box.dark {
+        color: #2D3640;
+      }
+
+    </style>
+    <script type="module" type="text/javascript">
+      import { getTextVariation } from '../index.js'
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const styles = getComputedStyle(document.documentElement)
+        const colors = styles.getPropertyValue('--palette-colors')
+                             .split(',')
+                             .map(pair => {
+                               pair = pair.trim()
+                               let [key, value] = pair.split(' ')
+                               return {key, value}
+                             })
+        const grid = document.querySelector('.grid')
+
+        colors.forEach(color => {
+          let box = document.createElement('div')
+          box.classList.add('grid-box', getTextVariation(color.value))
+          box.style['background-color'] = color.value
+          box.innerHTML = color.key
+          grid.appendChild(box)
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <div class="grid">
+
+    </div>
+  </body>
+</html>

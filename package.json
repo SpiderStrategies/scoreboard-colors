@@ -4,7 +4,11 @@
   "type": "module",
   "description": "Sass stylesheets for colors shared between various Scoreboard projects",
   "scripts": {
+    "build": "sass --no-source-map scoreboard-colors.scss example/scoreboard-colors.css",
     "test": "node test.js"
   },
-  "main": "index.js"
+  "main": "index.js",
+  "devDependencies": {
+    "sass": "^1.60.0"
+  }
 }
