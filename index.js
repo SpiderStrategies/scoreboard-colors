@@ -69,6 +69,9 @@ const getColor = color => {
  *
  * The threshold is used to determine if the color is "light" or "dark". The
  * default threshold of .6 seems to work well for our defined palette colors.
+ *
+ * The general idea and rules of this logic came from the following writeup:
+ * https://github.com/SpiderStrategies/Scoreboard/issues/52350#issuecomment-1483907870
  */
 const getTextVariation = (color, opacity = 1, threshold = .6) => {
   let rgba = getColor(color).rgba
