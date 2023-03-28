@@ -1,6 +1,6 @@
 import {test} from 'node:test'
 import * as assert from 'node:assert/strict'
-import {changeColor, coloredBackgroundAdjust} from './index.js'
+import {changeColor, coloredBackgroundAdjust, getTextVariation} from './index.js'
 
 // In the future, this test is going to look obnoxious, but
 // it was created when we migrated coloredBackgroundAdjust from sass to
@@ -600,4 +600,77 @@ test('rgba color match', t => {
 test('change color', t => {
   assert.equal(changeColor('#00A9C3', .4), 'rgba(0, 169, 195, 0.4)')
   assert.equal(changeColor('rgba(10, 40, 13)', .1), 'rgba(10, 40, 13, 0.1)')
+})
+
+test('text variations', t => {
+  assert.equal(getTextVariation('#C93C20'), 'light')
+  assert.equal(getTextVariation('#F25131'), 'light')
+  assert.equal(getTextVariation('#F7A695'), 'dark')
+  assert.equal(getTextVariation('#EB6600'), 'light')
+  assert.equal(getTextVariation('#FF8800'), 'dark')
+  assert.equal(getTextVariation('#FFC889'), 'dark')
+  assert.equal(getTextVariation('#EBB000'), 'dark')
+  assert.equal(getTextVariation('#FBCC3B'), 'dark')
+  assert.equal(getTextVariation('#FBE499'), 'dark')
+  assert.equal(getTextVariation('#619900'), 'light')
+  assert.equal(getTextVariation('#96CD00'), 'dark')
+  assert.equal(getTextVariation('#CAE779'), 'dark')
+  assert.equal(getTextVariation('#00A9C3'), 'light')
+  assert.equal(getTextVariation('#60CBDB'), 'dark')
+  assert.equal(getTextVariation('#CCF3f9'), 'dark')
+  assert.equal(getTextVariation('#0074BB'), 'light')
+  assert.equal(getTextVariation('#1A94DA'), 'light')
+  assert.equal(getTextVariation('#CDE9FA'), 'dark')
+  assert.equal(getTextVariation('#3654D4'), 'light')
+  assert.equal(getTextVariation('#839AFF'), 'dark')
+  assert.equal(getTextVariation('#C4CFFF'), 'dark')
+  assert.equal(getTextVariation('#6D1DB8'), 'light')
+  assert.equal(getTextVariation('#AD5AFA'), 'light')
+  assert.equal(getTextVariation('#DBB5FF'), 'dark')
+  assert.equal(getTextVariation('#A31DB8'), 'light')
+  assert.equal(getTextVariation('#E55BFA'), 'dark')
+  assert.equal(getTextVariation('#F5B5FF'), 'dark')
+  assert.equal(getTextVariation('#2D3640'), 'light')
+  assert.equal(getTextVariation('#8E9699'), 'light')
+  assert.equal(getTextVariation('#BCC2C4'), 'dark')
+  assert.equal(getTextVariation('#D7DEE0'), 'dark')
+  assert.equal(getTextVariation('#EDEDED'), 'dark')
+  assert.equal(getTextVariation('#8E9699'), 'light')
+  assert.equal(getTextVariation('#ABBFD8'), 'dark')
+  assert.equal(getTextVariation('#FFFFFF'), 'dark')
+  assert.equal(getTextVariation('#2164bd'), 'light')
+  assert.equal(getTextVariation('#8977b2'), 'light')
+  assert.equal(getTextVariation('#f3f5f6'), 'dark')
+})
+
+test('text variations with opacity parameter', t => {
+  assert.equal(getTextVariation('#C93C20', 1), 'light')
+  assert.equal(getTextVariation('#C93C20', 0.9), 'light')
+  assert.equal(getTextVariation('#C93C20', 0.8), 'light')
+  assert.equal(getTextVariation('#C93C20', 0.7), 'dark')
+  assert.equal(getTextVariation('#C93C20', 0.6), 'dark')
+  assert.equal(getTextVariation('#C93C20', 0.5), 'dark')
+  assert.equal(getTextVariation('#C93C20', 0.4), 'dark')
+  assert.equal(getTextVariation('#C93C20', 0.3), 'dark')
+  assert.equal(getTextVariation('#C93C20', 0.2), 'dark')
+  assert.equal(getTextVariation('#C93C20', 0.1), 'dark')
+})
+
+test('text variations with opacity in rgba', t => {
+  const color = [ 201, 60, 32 ]
+
+  const mixOpacity = opacity => {
+    return `rgba(${[...color, opacity].join(',')})`
+  }
+
+  assert.equal(getTextVariation(mixOpacity(1)), 'light')
+  assert.equal(getTextVariation(mixOpacity(0.9)), 'light')
+  assert.equal(getTextVariation(mixOpacity(0.8)), 'light')
+  assert.equal(getTextVariation(mixOpacity(0.7)), 'dark')
+  assert.equal(getTextVariation(mixOpacity(0.6)), 'dark')
+  assert.equal(getTextVariation(mixOpacity(0.5)), 'dark')
+  assert.equal(getTextVariation(mixOpacity(0.4)), 'dark')
+  assert.equal(getTextVariation(mixOpacity(0.3)), 'dark')
+  assert.equal(getTextVariation(mixOpacity(0.2)), 'dark')
+  assert.equal(getTextVariation(mixOpacity(0.1)), 'dark')
 })

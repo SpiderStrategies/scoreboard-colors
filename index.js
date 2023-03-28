@@ -59,6 +59,47 @@ const getColor = color => {
 }
 
 /*
+ * Returns a string indicating a `light` or `dark` text variation based on the
+ * incoming color. The incoming color can be a rgba or hex string. The rgba
+ * can have a defined alpha, or an `opacity` can be specified. If the color
+ * is opaque, we mix true white w/ the color before we determine its brightness.
+ *
+ * The brightness is defined by the equation specified:
+ *   https://alienryderflex.com/hsp.html
+ *
+ * The threshold is used to determine if the color is "light" or "dark". The
+ * default threshold of .6 seems to work well for our defined palette colors.
+ *
+ * The general idea and rules of this logic came from the following writeup:
+ * https://github.com/SpiderStrategies/Scoreboard/issues/52350#issuecomment-1483907870
+ */
+const getTextVariation = (color, opacity = 1, threshold = .6) => {
+  let rgba = getColor(color).rgba
+
+  if (rgba[3] !== 1) {
+    opacity = rgba[3]
+  }
+
+  if (opacity !== 1) {
+    // Mix white w/ the color
+    let p = 1 - opacity
+    rgba = mix(WHITE, rgba, p)
+  }
+
+  // From https://alienryderflex.com/hsp.html
+  const red = 0.299
+  const green = 0.587
+  const blue = 0.114
+
+  const contrast = Math.sqrt(
+    red * (rgba[0] / 255) ** 2 +
+    green * (rgba[1] / 255) ** 2 +
+    blue * (rgba[2] / 255) ** 2)
+
+  return contrast > threshold ? 'dark' : 'light'
+}
+
+/*
  * This adjusts the whiteness and saturation of a *hex* color to be used for gradients. After quite
  * a bit of trial and error, I found that mixing white for brightness and and black darkness works better
  * than calling scale-color on lightness. That's because some of the color like green became blown out
@@ -107,5 +148,4 @@ const mix = (mixin, color, p = .5 /* 50% default */) => {
   ]
 }
 
-export { getColor, coloredBackgroundAdjust, changeColor, mix, BLACK, WHITE }
-
+export { getColor, getTextVariation, coloredBackgroundAdjust, changeColor, mix, BLACK, WHITE }
