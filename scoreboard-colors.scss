@@ -262,6 +262,18 @@ $color-tree-traveling-node-background: #25282D;
 $color-tree-traveling-node-shadow: rgba($color-tree-traveling-node-background,0.50);
 $color-tree-editable-highlight: $color-gold;
 
+// Deprecated!
+@mixin labelOnColoredBackground() {
+  // Some DOM node types use fill, some use color
+  fill: $color-widget-primary-label;
+  color: $color-widget-primary-label;
+
+  text-shadow: 0 1px 1px rgba($color-white, 0.5);
+  // #22140 need the mouse to ignore the <text> elements so that the
+  // <title> on the svg path is used for hover text
+  pointer-events: none;
+}
+
 // Mixins to help iterate over the two color arrays
 @mixin standard-fill($color-list)  {
   @each $color in $color-list {
