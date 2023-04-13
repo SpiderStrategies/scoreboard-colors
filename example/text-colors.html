@@ -39,7 +39,7 @@
 
     </style>
     <script type="module" type="text/javascript">
-      import { getTextVariation } from '../index.js'
+      import { getTextVariation, lookup } from '../index.js'
 
       document.addEventListener('DOMContentLoaded', () => {
         const styles = getComputedStyle(document.documentElement)
@@ -56,7 +56,7 @@
           let box = document.createElement('div')
           box.classList.add('grid-box', getTextVariation(color.value))
           box.style['background-color'] = color.value
-          box.innerHTML = color.key
+          box.innerHTML = `${color.key} (${lookup(color.key).color})`
           grid.appendChild(box)
         })
       })
