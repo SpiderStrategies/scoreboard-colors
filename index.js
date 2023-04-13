@@ -43,19 +43,32 @@ const hexToRgba = hex => {
  */
 const getColor = color => {
   let rgba = color.match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*([\d\.]+))?\)$/)
+    , rgbaToString = ar => `rgba(${rgba.join(',')})`
+
   if (rgba) {
+    rgba = [Number(rgba[1]), Number(rgba[2]), Number(rgba[3]), Number(rgba[4]) || 1]
     return {
       type: 'rgba',
       color,
-      rgba: [Number(rgba[1]), Number(rgba[2]), Number(rgba[3]), Number(rgba[4]) || 1]
+      rgba,
+      rgbaString: rgbaToString(rgba)
     }
   } else {
+    rgba = hexToRgba(color)
     return {
       type: 'hex',
       color,
-      rgba: hexToRgba(color)
+      rgba,
+      rgbaString: rgbaToString(rgba)
     }
   }
+}
+
+/*
+ * Receives a named palette color and returns the color object from `getColor`
+ */
+export const lookup = color => {
+  return getColor(window.getComputedStyle(document.body).getPropertyValue(`--palette-color-${color}`))
 }
 
 /*
