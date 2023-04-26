@@ -1,6 +1,6 @@
 import {test} from 'node:test'
 import * as assert from 'node:assert/strict'
-import {changeColor, coloredBackgroundAdjust, getTextVariation} from './index.js'
+import {rgbToHex, hexToRgba, changeColor, coloredBackgroundAdjust, getTextVariation} from './index.js'
 
 // In the future, this test is going to look obnoxious, but
 // it was created when we migrated coloredBackgroundAdjust from sass to
@@ -673,4 +673,10 @@ test('text variations with opacity in rgba', t => {
   assert.equal(getTextVariation(mixOpacity(0.3)), 'dark')
   assert.equal(getTextVariation(mixOpacity(0.2)), 'dark')
   assert.equal(getTextVariation(mixOpacity(0.1)), 'dark')
+})
+
+test('color conversions', t => {
+  let color = '#c93c20'
+  assert.deepEqual(hexToRgba(color), [ 201, 60, 32, 1 ])
+  assert.equal(rgbToHex([ 201, 60, 32, 1 ]), color)
 })
