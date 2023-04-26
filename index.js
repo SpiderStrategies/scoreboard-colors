@@ -161,4 +161,4 @@ const mix = (mixin, color, p = .5 /* 50% default */) => {
   ]
 }
 
-export { getColor, getTextVariation, coloredBackgroundAdjust, changeColor, mix, BLACK, WHITE }
+export { hexToRgba, rgbToHex, getColor, getTextVariation, coloredBackgroundAdjust, changeColor, mix, BLACK, WHITE }
