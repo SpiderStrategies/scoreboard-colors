@@ -161,4 +161,31 @@ const mix = (mixin, color, p = .5 /* 50% default */) => {
   ]
 }
 
-export { hexToRgba, rgbToHex, getColor, getTextVariation, coloredBackgroundAdjust, changeColor, mix, BLACK, WHITE }
+
+/*
+ * Tints the color, by mixing white in with `color`. Returns a rgba string
+ */
+const tint = (color, p) => {
+  return `rgba(${mix(WHITE, color, p)})`
+}
+
+/*
+ * Shades the color, by mixing true black in with `color`. Returns a rgba string
+ */
+const shade = (color, p) => {
+  return `rgba(${mix(BLACK, color, p)})`
+}
+
+export {
+  hexToRgba,
+  rgbToHex,
+  getColor,
+  tint,
+  shade,
+  getTextVariation,
+  coloredBackgroundAdjust,
+  changeColor,
+  mix,
+  BLACK,
+  WHITE
+}

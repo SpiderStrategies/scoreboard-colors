@@ -1,6 +1,6 @@
 import {test} from 'node:test'
 import * as assert from 'node:assert/strict'
-import {rgbToHex, hexToRgba, changeColor, coloredBackgroundAdjust, getTextVariation} from './index.js'
+import {rgbToHex, hexToRgba, shade, tint, changeColor, coloredBackgroundAdjust, getTextVariation} from './index.js'
 
 // In the future, this test is going to look obnoxious, but
 // it was created when we migrated coloredBackgroundAdjust from sass to
@@ -679,4 +679,22 @@ test('color conversions', t => {
   let color = '#c93c20'
   assert.deepEqual(hexToRgba(color), [ 201, 60, 32, 1 ])
   assert.equal(rgbToHex([ 201, 60, 32, 1 ]), color)
+})
+
+test('tint', t => {
+  const purple = '#6D1DB8'
+  const tinted = tint(hexToRgba(purple), .50)
+  const rgba = tinted.match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*([\d\.]+))?\)$/)
+
+  assert.equal(tinted, 'rgba(182,142,220,1)')
+  assert.equal(rgbToHex(rgba.slice(1)), '#b68edc')
+})
+
+test('shade', t => {
+  const purple = '#6D1DB8'
+  const shaded = shade(hexToRgba(purple), .2)
+  const rgba = shaded.match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*([\d\.]+))?\)$/)
+
+  assert.equal(shaded, 'rgba(87,23,147,1)')
+  assert.equal(rgbToHex(rgba.slice(1)), '#571793')
 })
