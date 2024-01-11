@@ -14,7 +14,6 @@ $color-dark: #414C57;
 $color-black: #2D3640;
 $color-white: #FFFFFF;
 $color-true-black: #000000;
-$color-error: #FF4D4B;
 $color-shadow: #1E2125;
 $color-gold: #FFE593;
 $color-casper: #ADB8BC;
@@ -31,6 +30,7 @@ $color-warning: #FBCC3B;
 // V6 UPDATED COLOR PALATE
 // -- START: COLOR PALATTE
 $color-cta: #1A6CDF;
+$color-error: #E83636;
 
 $color-gray-025: #fcfcfd;
 $color-gray-050: #f9fafb;
@@ -88,8 +88,8 @@ $color-red-300: #c8391e;
 $color-input-background: $color-white;
 $color-input-border: $color-geyser;
 $color-input-shadow: rgba(#D2D8DD, .6);
-$color-input-text: $color-black;
-$color-input-placeholder-text: $color-silver;
+$color-input-text: $color-gray-900;
+$color-input-placeholder-text: $color-gray-300;
 $color-input-filled-background: $color-input-background;
 $color-input-filled-border: $color-input-border;
 $color-input-filled-shadow: $color-input-shadow;
