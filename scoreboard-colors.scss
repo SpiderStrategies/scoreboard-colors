@@ -1,6 +1,6 @@
 // SIMPLIFIED COLOR PALATE
 // -- START: COLOR PALATTE
-$color-cta: #30B2EE;
+
 $color-cta-dark: #25a9e6;
 $color-snow: #FAFBFC;
 $color-whisper: #F5F7FA;
@@ -12,9 +12,7 @@ $color-charcoal: #8B98A6;
 $color-slate: #616D7A;
 $color-dark: #414C57;
 $color-black: #2D3640;
-$color-white: #FFFFFF;
 $color-true-black: #000000;
-$color-error: #FF4D4B;
 $color-shadow: #1E2125;
 $color-gold: #FFE593;
 $color-casper: #ADB8BC;
@@ -30,6 +28,10 @@ $color-warning: #FBCC3B;
 
 // V6 UPDATED COLOR PALATE
 // -- START: COLOR PALATTE
+$color-cta: #1A6CDF;
+$color-error: #E83636;
+$color-white: #FFFFFF;
+
 $color-gray-025: #fcfcfd;
 $color-gray-050: #f9fafb;
 $color-gray-100: #f5f7fa;
@@ -84,10 +86,10 @@ $color-red-300: #c8391e;
 // INPUTS
 // -- standard input
 $color-input-background: $color-white;
-$color-input-border: $color-geyser;
+$color-input-border: $color-gray-200;
 $color-input-shadow: rgba(#D2D8DD, .6);
-$color-input-text: $color-black;
-$color-input-placeholder-text: $color-silver;
+$color-input-text: $color-gray-900;
+$color-input-placeholder-text: $color-gray-300;
 $color-input-filled-background: $color-input-background;
 $color-input-filled-border: $color-input-border;
 $color-input-filled-shadow: $color-input-shadow;
@@ -291,11 +293,11 @@ $color-widget-primary-label-light: rgba(255, 255, 255, .85);
 }
 
 // Tooltip
-$tooltip-header-bg: $color-snow;
+$tooltip-header-bg: $color-gray-050;
 $tooltip-bg: $color-white;
-$tooltip-border: $color-geyser;
+$tooltip-border: $color-gray-250;
 $tooltip-shadow: rgba($color-shadow, .20);
-$tooltip-header-border: $color-geyser;
+$tooltip-header-border: $color-gray-050;
 $tooltip-carrot-shadow: rgba($color-true-black, .11);
 $tooltip-carrot-bg: $tooltip-bg;
 $tooltip-error-border: $color-error;
@@ -304,7 +306,7 @@ $tooltip-sub-header: rgba($color-slate, .9);
 $tooltip-sub-content: rgba($color-dark, .4);
 
 // Trees
-$color-tree-background: $color-mine;
+$color-tree-background: $color-gray-050;
 $color-tree-node-text-color: $color-casper;
 $color-tree-node-text-shadow: rgba($color-true-black, 0.23);
 $color-tree-node-drag-handle-fill: #555A5E;
