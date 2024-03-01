@@ -16,21 +16,18 @@ $color-true-black: #000000;
 $color-shadow: #1E2125;
 $color-gold: #FFE593;
 $color-casper: #ADB8BC;
-$color-gray: #64686E;
+$color-gray: #64686E; 
 $color-mine: #393C40;
 $color-cod: #2D3135;
 $color-pearl: #1F2427;
 $color-aztec: #18191B;
 $color-bunker: #0E0F13;
 $color-night: #0F171D;
-$color-warning: #FBCC3B;
+$color-white: #FFFFFF;
 // -- END: COLOR PALATTE
 
 // V6 UPDATED COLOR PALATE
 // -- START: COLOR PALATTE
-$color-cta: #1A6CDF;
-$color-error: #E83636;
-$color-white: #FFFFFF;
 
 $color-gray-025: #fcfcfd;
 $color-gray-050: #f9fafb;
@@ -49,38 +46,68 @@ $color-gray-750: #3c3f4d;
 $color-gray-800: #303440;
 $color-gray-900: #242733;
 $color-gray-950: #171923;
-$color-gray-950-4: rgba(23, 25, 35, 0.04);
-$color-gray-950-8: rgba(23, 25, 35, 0.08);
-$color-gray-950-14: rgba(23, 25, 35, 0.14);
-$color-orange-0250: #fffdfa;
-$color-orange-050: #fff8ec;
-$color-orange-100: #ffedd3;
-$color-orange-200: #ffdaa6;
-$color-orange-300: #ffbf75;
-$color-orange-400: #ffa64d;
-$color-orange-500: #ff9124;
-$color-orange-600: #f57a00;
-$color-orange-700: #e26003;
-$color-orange-750: #bf480d;
-$color-orange-800: #943b0f;
-$color-orange-900: #612405;
-$color-orange-950: #3a1503;
-$color-ai-violet-025: #fbfaff;
-$color-ai-violet-050: #eeebff;
-$color-ai-violet-100: #d8cdfe;
-$color-ai-violet-200: #c4a8f5;
-$color-ai-violet-300: #9f72ee;
-$color-ai-violet-400: #8f57eb;
-$color-ai-violet-500: #7e25e5;
-$color-ai-violet-600: #5f24b2;
-$color-ai-violet-700: #522197;
-$color-ai-violet-750: #421b79;
-$color-ai-violet-800: #341759;
-$color-ai-violet-900: #2b1547;
-$color-ai-violet-950: #2b1547;
-$color-red-100: #f5a596;
-$color-red-200: #f25130;
-$color-red-300: #c8391e;
+
+$color-blue-050: #F2F4FB;
+$color-blue-100: #E9ECF9;
+$color-blue-200: #D0D9F4;
+$color-blue-250: #B5C3EF;
+$color-blue-300: #94ABEA;
+$color-blue-400: #689BEF;
+$color-blue-500: #1A6CDF;
+$color-blue-600: #1762CB;
+$color-blue-700: #1558B5;
+$color-blue-750: #124C9D;
+$color-blue-800: #0F3E80;
+$color-blue-900: #0A2C5A;
+$color-cta: $color-blue-500;
+
+$color-error-050: #FEEEEA;
+$color-error-100: #FCDCD6;
+$color-error-200: #F7A695;
+$color-error-300: #FC8E77;
+$color-error-400: #F57459;
+$color-error-500: #F25131;
+$color-error-600: #C93C20;
+$color-error-700: #91311D;
+$color-error-800: #6F2516;
+$color-error: $color-error-500;
+
+$color-warning-050: #FFFAEB;
+$color-warning-100: #FEF5D8;
+$color-warning-200: #FBE499;
+$color-warning-300: #FDDA73;
+$color-warning-400: #FCD662;
+$color-warning-500: #FBCC3B;
+$color-warning-600: #EBB000;
+$color-warning-700: #A67400;
+$color-warning-800: #5C3F00;
+$color-warning: $color-warning-500;
+
+$color-edit-050: #FFF3E6;
+$color-edit-100: #FFE7CC;
+$color-edit-200: #FFC889;
+$color-edit-300: #FFB866;
+$color-edit-400: #FFA64D;
+$color-edit-500: #FF9124;
+$color-edit-600: #EB6600;
+$color-edit-700: #995200;
+$color-edit-800: #663600;
+$color-edit: $color-edit-500;
+
+$color-ai-orchid-025: #fbfaff;
+$color-ai-orchid-050: #eeebff;
+$color-ai-orchid-100: #d8cdfe;
+$color-ai-orchid-200: #c4a8f5;
+$color-ai-orchid-300: #9e9ba4;
+$color-ai-orchid-400: #8f57eb;
+$color-ai-orchid-500: #7e25e5;
+$color-ai-orchid-600: #5f24b2;
+$color-ai-orchid-700: #522197;
+$color-ai-orchid-750: #421b79;
+$color-ai-orchid-800: #341759;
+$color-ai-orchid-900: #2b1547;
+$color-ai-orchid-950: #2b1547;
+
 // -- END: COLOR PALATTE
 
 // INPUTS
@@ -94,14 +121,14 @@ $color-input-filled-background: $color-input-background;
 $color-input-filled-border: $color-input-border;
 $color-input-filled-shadow: $color-input-shadow;
 $color-input-hovered-background: $color-input-background;
-$color-input-hovered-border: $color-silver;
+$color-input-hovered-border: $color-gray-400;
 $color-input-hovered-shadow: $color-input-shadow;
 $color-input-hovered-text: $color-black;
 $color-input-focused-background: $color-input-background;
 $color-input-focused-border: $color-cta;
 $color-input-focused-shadow-outset: rgba(#2FB1ED,0.20);
 $color-input-focused-shadow-inset: $color-input-shadow;
-$color-input-focused-text: $color-black;
+$color-input-focused-text: $color-gray-750;
 $color-input-errored-background: $color-input-background;
 $color-input-errored-border: $color-error;
 $color-input-errored-shadow: $color-input-shadow;
@@ -315,7 +342,7 @@ $color-tree-node-selected-text-color: $color-ash;
 $color-tree-node-transient-border: $color-slate;
 $color-tree-traveling-node-background: #25282D;
 $color-tree-traveling-node-shadow: rgba($color-tree-traveling-node-background,0.50);
-$color-tree-editable-highlight: $color-gold;
+$color-tree-editable-highlight: $color-orange-600;
 
 // Deprecated!
 @mixin labelOnColoredBackground() {
