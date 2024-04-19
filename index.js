@@ -117,9 +117,11 @@ const getTextVariation = (color, opacity = 1, threshold = .6) => {
  * a bit of trial and error, I found that mixing white for brightness and and black darkness works better
  * than calling scale-color on lightness. That's because some of the color like green became blown out
  * when getting lighter, and mixing black gives a smooth smokey color for darkness. We can't increase saturation
- *because that unintentionally colors grays.
+ * because that unintentionally colors grays.
+ *
+ * This function name matches photoshop.
  */
-const coloredBackgroundAdjust = (colorString, whitenessAdjustment) => {
+const adjustLightness = (colorString, whitenessAdjustment) => {
   let p = (whitenessAdjustment > 0 ? whitenessAdjustment : -1 * whitenessAdjustment) / 100
     , color = getColor(colorString)
     , mixin = whitenessAdjustment > 0 ? WHITE : BLACK
@@ -162,28 +164,12 @@ const mix = (mixin, color, p = .5 /* 50% default */) => {
 }
 
 
-/*
- * Tints the color, by mixing white in with `color`. Returns a rgba string
- */
-const tint = (color, p) => {
-  return `rgba(${mix(WHITE, color, p)})`
-}
-
-/*
- * Shades the color, by mixing true black in with `color`. Returns a rgba string
- */
-const shade = (color, p) => {
-  return `rgba(${mix(BLACK, color, p)})`
-}
-
 export {
   hexToRgba,
   rgbToHex,
   getColor,
-  tint,
-  shade,
   getTextVariation,
-  coloredBackgroundAdjust,
+  adjustLightness,
   changeColor,
   mix,
   BLACK,
