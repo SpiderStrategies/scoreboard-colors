@@ -229,7 +229,7 @@ $color-widget-primary-label-light: rgba(255, 255, 255, .85);
 // than calling scale-color on lightness. That's because some of the color like green became blown out
 // when getting lighter, and mixing black gives a smooth smokey color for darkness. We can't increase saturation
 // because that unintentionally colors grays.
-@function coloredBackgroundAdjust($color, $whitenessAdjustment) {
+@function adjustLightness($color, $whitenessAdjustment) {
   @if $whitenessAdjustment > 0 {
     @return mix(white, $color, $whitenessAdjustment);
   } @else {
