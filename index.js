@@ -121,7 +121,7 @@ const getTextVariation = (color, opacity = 1, threshold = .6) => {
  *
  * This function name matches photoshop.
  */
-const adjustLightness = (colorString, whitenessAdjustment) => {
+const coloredBackgroundAdjust = (colorString, whitenessAdjustment) => {
   let p = (whitenessAdjustment > 0 ? whitenessAdjustment : -1 * whitenessAdjustment) / 100
     , color = getColor(colorString)
     , mixin = whitenessAdjustment > 0 ? WHITE : BLACK
@@ -169,7 +169,7 @@ export {
   rgbToHex,
   getColor,
   getTextVariation,
-  adjustLightness,
+  coloredBackgroundAdjust,
   changeColor,
   mix,
   BLACK,
