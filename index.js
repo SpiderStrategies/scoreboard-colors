@@ -4,13 +4,6 @@ const BLACK = [0, 0, 0, 1]
 // Cache for CSS color values to avoid repeated getComputedStyle calls
 let colorCache = new Map()
 
-/**
- * Clear the color cache
- */
-const clearColorCache = () => {
-  colorCache.clear()
-}
-
 /*
  * Receives an array of the rgb, returns a hex value
  */
@@ -187,7 +180,6 @@ export {
   adjustLightness,
   changeColor,
   mix,
-  clearColorCache,
   BLACK,
   WHITE
 }
