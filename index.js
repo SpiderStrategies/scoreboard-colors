@@ -1,8 +1,19 @@
 const WHITE = [255, 255, 255, 1]
 const BLACK = [0, 0, 0, 1]
 
-// Cache for CSS color values to avoid repeated getComputedStyle calls
-let colorCache = new Map()
+// Cache for CSS variable values to avoid repeated getComputedStyle calls
+let cssVariableCache = new Map()
+
+/**
+ * Get a CSS variable value with caching
+ */
+const getCSSVariable = (cssVar) => {
+  if (!cssVariableCache.has(cssVar)) {
+    const value = window.getComputedStyle(document.body).getPropertyValue(cssVar).trim()
+    cssVariableCache.set(cssVar, value || '')
+  }
+  return cssVariableCache.get(cssVar)
+}
 
 /*
  * Receives an array of the rgb, returns a hex value
@@ -71,12 +82,8 @@ const getColor = color => {
  * Receives a named palette color and returns the color object from `getColor`
  */
 export const lookup = color => {
-  if (!colorCache.has(color)) {
-    const value = window.getComputedStyle(document.body).getPropertyValue(`--palette-color-${color}`).trim()
-    colorCache.set(color, value || '')
-  }
-
-  return getColor(colorCache.get(color))
+  const cssValue = getCSSVariable(`--palette-color-${color}`)
+  return getColor(cssValue)
 }
 
 /*
@@ -180,6 +187,7 @@ export {
   adjustLightness,
   changeColor,
   mix,
+  getCSSVariable,
   BLACK,
   WHITE
 }
