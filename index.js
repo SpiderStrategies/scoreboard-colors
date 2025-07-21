@@ -7,7 +7,7 @@ let cssVariableCache = new Map()
 /**
  * Get a CSS variable value with caching
  */
-const getCSSVariable = (cssVar) => {
+function getCSSVariable(cssVar) {
   if (!cssVariableCache.has(cssVar)) {
     const value = window.getComputedStyle(document.body).getPropertyValue(cssVar).trim()
     cssVariableCache.set(cssVar, value || '')
