@@ -116,7 +116,7 @@ export const lookup = color => {
   }
 
   const cachedColor = colorCache.get(color) ||
-    window.getComputedStyle(document.body).getPropertyValue(`--palette-color-${color}`)
+    window.getComputedStyle(document.body).getPropertyValue(`--palette-color-${color}`).trim()
 
   return getColor(cachedColor)
 }
