@@ -1,6 +1,49 @@
 const WHITE = [255, 255, 255, 1]
 const BLACK = [0, 0, 0, 1]
 
+// Cache for CSS color values to avoid repeated getComputedStyle calls
+let colorCache = new Map()
+let isCacheInitialized = false
+
+// Known palette colors that can be cached
+const PALETTE_COLORS = [
+  'white', 'slate', 'infantry-blue',
+  'red-dark', 'red-medium', 'red-light',
+  'orange-dark', 'orange-medium', 'orange-light',
+  'yellow-dark', 'yellow-medium', 'yellow-light',
+  'green-dark', 'green-medium', 'green-light',
+  'turquoise-dark', 'turquoise-medium', 'turquoise-light',
+  'blue-dark', 'blue-medium', 'blue-light',
+  'periwinkle-dark', 'periwinkle-medium', 'periwinkle-light',
+  'purple-dark', 'purple-medium', 'purple-light',
+  'fuchsia-dark', 'fuchsia-medium', 'fuchsia-light',
+  'gray-darker', 'gray-dark', 'gray-medium', 'gray-light'
+]
+
+/**
+ * Initialize the color cache by reading all palette colors once
+ */
+const initializeColorCache = () => {
+  const computedStyle = window.getComputedStyle(document.body)
+
+  PALETTE_COLORS.forEach(color => {
+    const cssValue = computedStyle.getPropertyValue(`--palette-color-${color}`).trim()
+    if (cssValue) {
+      colorCache.set(color, cssValue)
+    }
+  })
+
+  isCacheInitialized = true
+}
+
+/**
+ * Clear the color cache and force re-initialization
+ */
+const clearColorCache = () => {
+  colorCache.clear()
+  isCacheInitialized = false
+}
+
 /*
  * Receives an array of the rgb, returns a hex value
  */
@@ -68,7 +111,14 @@ const getColor = color => {
  * Receives a named palette color and returns the color object from `getColor`
  */
 export const lookup = color => {
-  return getColor(window.getComputedStyle(document.body).getPropertyValue(`--palette-color-${color}`))
+  if (!isCacheInitialized) {
+    initializeColorCache()
+  }
+
+  const cachedColor = colorCache.get(color) ||
+    window.getComputedStyle(document.body).getPropertyValue(`--palette-color-${color}`)
+
+  return getColor(cachedColor)
 }
 
 /*
@@ -172,6 +222,7 @@ export {
   adjustLightness,
   changeColor,
   mix,
+  clearColorCache,
   BLACK,
   WHITE
 }
