@@ -684,7 +684,8 @@ test('color conversions', t => {
 test('getCSSVariable caching', t => {
   let callCount = 0
 
-  globalThis.window = {
+  // Mock browser globals for Node.js testing environment
+  global.window = {
     getComputedStyle: () => ({
       getPropertyValue: (prop) => {
         callCount++
@@ -692,7 +693,7 @@ test('getCSSVariable caching', t => {
       }
     })
   }
-  globalThis.document = { body: {} }
+  global.document = { body: {} }
 
   assert.equal(getCSSVariable('--test-var'), '#123456')
   assert.equal(callCount, 1)
