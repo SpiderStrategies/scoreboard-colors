@@ -1,6 +1,6 @@
 import {test} from 'node:test'
 import * as assert from 'node:assert/strict'
-import {rgbToHex, hexToRgba, changeColor, adjustLightness, getTextVariation} from './index.js'
+import {rgbToHex, hexToRgba, changeColor, adjustLightness, getTextVariation, getCSSVariable} from './index.js'
 
 // In the future, this test is going to look obnoxious, but
 // it was created when we migrated adjustLightness from sass to
@@ -679,5 +679,26 @@ test('color conversions', t => {
   let color = '#c93c20'
   assert.deepEqual(hexToRgba(color), [ 201, 60, 32, 1 ])
   assert.equal(rgbToHex([ 201, 60, 32, 1 ]), color)
+})
+
+test('getCSSVariable caching', t => {
+  let callCount = 0
+
+  // Mock browser globals for Node.js testing environment
+  global.window = {
+    getComputedStyle: () => ({
+      getPropertyValue: (prop) => {
+        callCount++
+        return prop === '--test-var' ? '#123456' : ''
+      }
+    })
+  }
+  global.document = { body: {} }
+
+  assert.equal(getCSSVariable('--test-var'), '#123456')
+  assert.equal(callCount, 1)
+
+  assert.equal(getCSSVariable('--test-var'), '#123456')
+  assert.equal(callCount, 1)
 })
 
