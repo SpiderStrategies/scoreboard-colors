@@ -15,6 +15,13 @@ function getCSSVariable(cssVar) {
   return cssVariableCache.get(cssVar)
 }
 
+/**
+ * Clear the CSS variable cache (for testing purposes)
+ */
+function clearCSSVariableCache() {
+  cssVariableCache.clear()
+}
+
 /*
  * Receives an array of the rgb, returns a hex value
  */
@@ -188,6 +195,7 @@ export {
   changeColor,
   mix,
   getCSSVariable,
+  clearCSSVariableCache,
   BLACK,
   WHITE
 }
