@@ -31,11 +31,14 @@ $color-white: #FFFFFF;
 
 $color-gray-025: #fcfcfd;
 $color-gray-050: #f9fafb;
-$color-gray-100: #f5f7fa;
-$color-gray-150: #eef1f6;
-$color-gray-200: #e6e9f2;
-$color-gray-250: #dde0eb;
-$color-gray-300: #d5d9d5;
+// #59934
+// Issue #59934 - Align gray tokens with Figma Foundation tokens
+// https://www.figma.com/design/JyV8dgcA5xPIfH98UhoZUm/Library-Foundation?node-id=1701-618&p=f&vars=1&var-id=2314-26&m=dev
+$color-gray-100: #f5f7f9;
+$color-gray-150: #eff1f5;
+$color-gray-200: #e7e9f1;
+$color-gray-250: #dee1ea;
+$color-gray-300: #d6dae4;
 $color-gray-400: #c8cbd9;
 $color-gray-450: #a4a8ba;
 $color-gray-500: #818599;
