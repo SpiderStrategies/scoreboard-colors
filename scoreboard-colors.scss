@@ -1,7 +1,7 @@
 // SIMPLIFIED COLOR PALATE
 // -- START: COLOR PALATTE
-$color-cta: #30B2EE;
-$color-cta-dark: #25a9e6;
+
+$color-cta-dark: #1A6CDF;
 $color-snow: #FAFBFC;
 $color-whisper: #F5F7FA;
 $color-ash: #EFF3F7;
@@ -12,9 +12,7 @@ $color-charcoal: #8B98A6;
 $color-slate: #616D7A;
 $color-dark: #414C57;
 $color-black: #2D3640;
-$color-white: #FFFFFF;
 $color-true-black: #000000;
-$color-error: #FF4D4B;
 $color-shadow: #1E2125;
 $color-gold: #FFE593;
 $color-casper: #ADB8BC;
@@ -25,28 +23,112 @@ $color-pearl: #1F2427;
 $color-aztec: #18191B;
 $color-bunker: #0E0F13;
 $color-night: #0F171D;
-$color-warning: #FBCC3B;
+$color-white: #FFFFFF;
+// -- END: COLOR PALATTE
+
+// V6 UPDATED COLOR PALATE
+// -- START: COLOR PALATTE
+
+$color-gray-025: #fcfcfd;
+$color-gray-050: #f9fafb;
+$color-gray-100: #f5f7fa;
+$color-gray-150: #eef1f6;
+$color-gray-200: #e6e9f2;
+$color-gray-250: #dde0eb;
+$color-gray-300: #d5d9d5;
+$color-gray-400: #c8cbd9;
+$color-gray-450: #a4a8ba;
+$color-gray-500: #818599;
+$color-gray-550: #6b6f80;
+$color-gray-600: #545766;
+$color-gray-700: #494d5c;
+$color-gray-750: #3c3f4d;
+$color-gray-800: #303440;
+$color-gray-900: #242733;
+$color-gray-950: #171923;
+
+$color-blue-050: #F2F4FB;
+$color-blue-100: #E9ECF9;
+$color-blue-200: #D0D9F4;
+$color-blue-250: #B5C3EF;
+$color-blue-300: #94ABEA;
+$color-blue-400: #689BEF;
+$color-blue-500: #1A6CDF;
+$color-blue-600: #1762CB;
+$color-blue-700: #1558B5;
+$color-blue-750: #124C9D;
+$color-blue-800: #0F3E80;
+$color-blue-900: #0A2C5A;
+$color-cta: $color-blue-500;
+
+$color-error-050: #FEEEEA;
+$color-error-100: #FCDCD6;
+$color-error-200: #F7A695;
+$color-error-300: #FC8E77;
+$color-error-400: #F57459;
+$color-error-500: #F25131;
+$color-error-600: #C93C20;
+$color-error-700: #91311D;
+$color-error-800: #6F2516;
+$color-error: $color-error-500;
+
+$color-warning-050: #FFFAEB;
+$color-warning-100: #FEF5D8;
+$color-warning-200: #FBE499;
+$color-warning-300: #FDDA73;
+$color-warning-400: #FCD662;
+$color-warning-500: #FBCC3B;
+$color-warning-600: #EBB000;
+$color-warning-700: #A67400;
+$color-warning-800: #5C3F00;
+$color-warning: $color-warning-500;
+
+$color-edit-050: #FFF3E6;
+$color-edit-100: #FFE7CC;
+$color-edit-200: #FFC889;
+$color-edit-300: #FFB866;
+$color-edit-400: #FFA64D;
+$color-edit-500: #FE8503;
+$color-edit-600: #f57a00;
+$color-edit-700: #995200;
+$color-edit-800: #663600;
+$color-edit: $color-edit-500;
+
+$color-ai-orchid-025: #fbfaff;
+$color-ai-orchid-050: #eeebff;
+$color-ai-orchid-100: #d8cdfe;
+$color-ai-orchid-200: #c4a8f5;
+$color-ai-orchid-300: #9e9ba4;
+$color-ai-orchid-400: #8f57eb;
+$color-ai-orchid-500: #7e25e5;
+$color-ai-orchid-600: #5f24b2;
+$color-ai-orchid-700: #522197;
+$color-ai-orchid-750: #421b79;
+$color-ai-orchid-800: #341759;
+$color-ai-orchid-900: #2b1547;
+$color-ai-orchid-950: #2b1547;
+
 // -- END: COLOR PALATTE
 
 // INPUTS
 // -- standard input
 $color-input-background: $color-white;
-$color-input-border: $color-geyser;
+$color-input-border: $color-gray-200;
 $color-input-shadow: rgba(#D2D8DD, .6);
-$color-input-text: $color-black;
-$color-input-placeholder-text: $color-silver;
+$color-input-text: $color-gray-900;
+$color-input-placeholder-text: $color-gray-300;
 $color-input-filled-background: $color-input-background;
 $color-input-filled-border: $color-input-border;
 $color-input-filled-shadow: $color-input-shadow;
 $color-input-hovered-background: $color-input-background;
-$color-input-hovered-border: $color-silver;
+$color-input-hovered-border: $color-gray-400;
 $color-input-hovered-shadow: $color-input-shadow;
 $color-input-hovered-text: $color-black;
 $color-input-focused-background: $color-input-background;
 $color-input-focused-border: $color-cta;
 $color-input-focused-shadow-outset: rgba(#2FB1ED,0.20);
 $color-input-focused-shadow-inset: $color-input-shadow;
-$color-input-focused-text: $color-black;
+$color-input-focused-text: $color-gray-750;
 $color-input-errored-background: $color-input-background;
 $color-input-errored-border: $color-error;
 $color-input-errored-shadow: $color-input-shadow;
@@ -238,11 +320,11 @@ $color-widget-primary-label-light: rgba(255, 255, 255, .85);
 }
 
 // Tooltip
-$tooltip-header-bg: $color-snow;
+$tooltip-header-bg: $color-gray-050;
 $tooltip-bg: $color-white;
-$tooltip-border: $color-geyser;
+$tooltip-border: $color-gray-250;
 $tooltip-shadow: rgba($color-shadow, .20);
-$tooltip-header-border: $color-geyser;
+$tooltip-header-border: $color-gray-050;
 $tooltip-carrot-shadow: rgba($color-true-black, .11);
 $tooltip-carrot-bg: $tooltip-bg;
 $tooltip-error-border: $color-error;
@@ -251,7 +333,7 @@ $tooltip-sub-header: rgba($color-slate, .9);
 $tooltip-sub-content: rgba($color-dark, .4);
 
 // Trees
-$color-tree-background: $color-mine;
+$color-tree-background: $color-gray-050;
 $color-tree-node-text-color: $color-casper;
 $color-tree-node-text-shadow: rgba($color-true-black, 0.23);
 $color-tree-node-drag-handle-fill: #555A5E;
@@ -260,7 +342,7 @@ $color-tree-node-selected-text-color: $color-ash;
 $color-tree-node-transient-border: $color-slate;
 $color-tree-traveling-node-background: #25282D;
 $color-tree-traveling-node-shadow: rgba($color-tree-traveling-node-background,0.50);
-$color-tree-editable-highlight: $color-gold;
+$color-tree-editable-highlight: $color-edit-400;
 
 // Deprecated!
 @mixin labelOnColoredBackground() {
